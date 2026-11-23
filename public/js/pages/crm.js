@@ -87,12 +87,29 @@ export async function renderCrm(view) {
       </div>
     </div>
 
+    <!-- CRM Mobile Stage Switcher Nav (Visible on mobile viewports <= 860px) -->
+    <div class="crm-mobile-nav" id="crmMobileNav">
+      ${STAGES.map((st, idx) => {
+        const stageLeads = leads.filter((l) => (st.key === 'dispatched' ? l.stage === 'dispatched' || l.stage === 'order_won' : l.stage === st.key));
+        const shortName = st.key === 'inquiry' ? 'Inquiries' :
+                          st.key === 'qualified' ? 'Evaluation' :
+                          st.key === 'quote_sent' ? 'Proforma' :
+                          st.key === 'order_won' ? 'Confirmed' : 'Dispatched';
+        return `
+          <button class="crm-stage-tab ${idx === 0 ? 'active' : ''}" data-stage="${st.key}">
+            <span>${esc(shortName)}</span>
+            <span class="badge plain ${st.tone}">${stageLeads.length}</span>
+          </button>
+        `;
+      }).join('')}
+    </div>
+
     <!-- CRM Kanban Board -->
     <div class="crm-board" id="crmBoard">
-      ${STAGES.map((st) => {
+      ${STAGES.map((st, idx) => {
         const stageLeads = leads.filter((l) => (st.key === 'dispatched' ? l.stage === 'dispatched' || l.stage === 'order_won' : l.stage === st.key));
         return `
-          <div class="crm-col" data-stage="${st.key}">
+          <div class="crm-col ${idx === 0 ? 'active-mobile-stage' : ''}" data-stage="${st.key}">
             <div class="crm-col-h">
               <span>${esc(st.title)}</span>
               <span class="badge plain ${st.tone}">${stageLeads.length}</span>
@@ -121,6 +138,24 @@ export async function renderCrm(view) {
       }).join('')}
     </div>
   `;
+
+  // Mobile CRM Stage Switcher Tab Binding
+  const stageTabs = view.querySelectorAll('.crm-stage-tab');
+  const stageCols = view.querySelectorAll('.crm-col');
+  stageTabs.forEach((tab) => {
+    tab.onclick = () => {
+      stageTabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+      const targetStage = tab.dataset.stage;
+      stageCols.forEach((col) => {
+        if (col.dataset.stage === targetStage) {
+          col.classList.add('active-mobile-stage');
+        } else {
+          col.classList.remove('active-mobile-stage');
+        }
+      });
+    };
+  });
 
   // New Lead Modal
   view.querySelector('#newLeadBtn').onclick = () => {
