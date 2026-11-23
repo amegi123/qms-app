@@ -5,6 +5,8 @@ import { renderDocuments, renderDocViewer, openDocDrawer } from './pages/documen
 import { renderModule, openRecord } from './pages/module.js';
 import { renderOrg } from './pages/org.js';
 import { renderReports, renderAdmin } from './pages/reports.js';
+import { renderCrm } from './pages/crm.js';
+import { renderAdvisor } from './pages/advisor.js';
 
 // ---------- theme: 'light' (default) | 'dark' | 'system' ----------
 const mq = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : { matches: false };
@@ -26,52 +28,77 @@ function updateThemeIcon() { const b = document.getElementById('themeBtn'); if (
 const NAV = [
   {
     id: 'overview',
-    sec: 'Overview',
+    sec: 'Overview & CEO Command',
     icon: 'home',
     collapsible: false,
     items: [
-      ['dashboard', 'Dashboard', 'home'],
-      ['tasks', 'My Work', 'zap'],
-    ],
-  },
-  {
-    id: 'quality',
-    sec: 'Quality & Compliance',
-    icon: 'shield',
-    collapsible: true,
-    items: [
-      ['documents', 'Document Control', 'file'],
-      ['m/records', 'Records Register', 'archive'],
-      ['m/correspondence', 'Incoming / Outgoing Register', 'message'],
-      ['m/audits', 'Internal Audits', 'clipboard'],
-      ['m/ncr', 'Non-Conforming Product', 'alert'],
-      ['m/capa', 'Corrective Actions', 'wrench'],
-      ['m/reviews', 'Management Review', 'users'],
-      ['m/risks', 'Risk & Opportunity Register', 'target'],
-      ['m/memos', 'Internal Memos', 'message'],
+      ['dashboard', 'CEO Command Center', 'home'],
+      ['advisor', 'Grounded AI Advisor', 'zap'],
+      ['tasks', 'My Action Center', 'clipboard'],
     ],
   },
   {
     id: 'production',
-    sec: 'Production & Plant',
+    sec: 'Manufacturing & Extrusion',
     icon: 'layers',
     collapsible: true,
     items: [
-      ['m/production', 'Production Orders', 'layers'],
-      ['m/shiftlogs', 'Shift Production Log', 'clock'],
-      ['m/recycling', 'Scrap & Recycling', 'refresh'],
-      ['m/fgtransfer', 'Finished Goods Transfer Notes', 'send'],
+      ['m/production', 'Work Orders & Scheduling', 'layers'],
+      ['m/shiftlogs', 'Extrusion Shift Logs', 'clock'],
+      ['m/recycling', 'Scrap & Regrind Balance', 'refresh'],
+      ['m/fgtransfer', 'OF/WF/079 FG Handover', 'send'],
     ],
   },
   {
-    id: 'qa_lab',
-    sec: 'QA, Lab & Testing',
-    icon: 'flask',
+    id: 'inventory',
+    sec: 'Warehousing & Batch Ledger',
+    icon: 'grid',
     collapsible: true,
     items: [
+      ['m/inventory', 'Split Ledgers (RM/FG/Spares)', 'grid'],
+      ['m/gatepass', 'Gate Passes & Logistics', 'lock'],
+    ],
+  },
+  {
+    id: 'procurement',
+    sec: 'Procurement & Requisitions',
+    icon: 'truck',
+    collapsible: true,
+    items: [
+      ['m/purchasing', 'Purchase Requests & POs', 'truck'],
+      ['m/suppliers', 'Supplier Directory & 3-Bids', 'shield'],
+    ],
+  },
+  {
+    id: 'sales',
+    sec: 'Sales & CRM Pipeline',
+    icon: 'star',
+    collapsible: true,
+    items: [
+      ['crm', 'CRM Leads & Pipeline', 'star'],
+      ['m/dispatch', 'Sales Orders & Dispatch', 'send'],
+      ['m/complaints', 'Customer Complaints', 'message'],
+      ['m/satisfaction', 'Customer Satisfaction', 'smile'],
+    ],
+  },
+  {
+    id: 'quality',
+    sec: 'Integrated eQMS (ISO 9001)',
+    icon: 'shield',
+    collapsible: true,
+    items: [
+      ['documents', 'Document Control', 'file'],
+      ['m/ncr', 'Non-Conforming Product', 'alert'],
+      ['m/capa', 'CAPA & 5-Why Investigation', 'wrench'],
+      ['m/audits', 'Internal Audit Planner', 'clipboard'],
       ['m/labtests', 'Laboratory Tests & CoA', 'flask'],
       ['m/inspections', 'Inspection & Testing', 'eye'],
-      ['m/calibration', 'Calibration', 'gauge'],
+      ['m/calibration', 'Calibration Hard-Lock', 'gauge'],
+      ['m/reviews', 'Management Review', 'users'],
+      ['m/risks', 'Risk & Opportunity Register', 'target'],
+      ['m/records', 'Records Register', 'archive'],
+      ['m/correspondence', 'Incoming / Outgoing Register', 'message'],
+      ['m/memos', 'Internal Memos', 'message'],
     ],
   },
   {
@@ -80,32 +107,9 @@ const NAV = [
     icon: 'cog',
     collapsible: true,
     items: [
-      ['m/assets', 'Machines & Assets', 'sitemap'],
+      ['m/assets', 'Extrusion Machines & Lines', 'sitemap'],
       ['m/pmplans', 'Preventive Maintenance Plans', 'calendar'],
-      ['m/maintenance', 'Maintenance', 'cog'],
-    ],
-  },
-  {
-    id: 'procurement',
-    sec: 'Procurement & Inventory',
-    icon: 'truck',
-    collapsible: true,
-    items: [
-      ['m/purchasing', 'Purchase Requests', 'truck'],
-      ['m/suppliers', 'Supplier Evaluation', 'shield'],
-      ['m/inventory', 'Inventory & Stock', 'grid'],
-      ['m/gatepass', 'Gate Passes', 'lock'],
-    ],
-  },
-  {
-    id: 'sales',
-    sec: 'Sales & Customers',
-    icon: 'smile',
-    collapsible: true,
-    items: [
-      ['m/dispatch', 'Sales & Dispatch', 'send'],
-      ['m/complaints', 'Customer Complaints', 'star'],
-      ['m/satisfaction', 'Customer Satisfaction', 'smile'],
+      ['m/maintenance', 'Breakdown Work Orders', 'cog'],
     ],
   },
   {
@@ -114,7 +118,7 @@ const NAV = [
     icon: 'users',
     collapsible: true,
     items: [
-      ['m/employees', 'Employees & Competency', 'users'],
+      ['m/employees', 'Staff Registry & Competencies', 'users'],
       ['m/training', 'Training & Competence', 'grad'],
       ['m/appraisals', 'Performance Appraisals', 'star'],
       ['m/hse', 'Health, Safety & Environment', 'drop'],
@@ -124,26 +128,26 @@ const NAV = [
   },
   {
     id: 'finance',
-    sec: 'Finance & Tools',
+    sec: 'Finance & Costing',
     icon: 'chart',
     collapsible: true,
     isSecondary: true,
     items: [
-      ['m/expenses', 'Payments & Expenses', 'chart'],
-      ['m/fixedassets', 'Fixed Assets', 'building'],
-      ['tools', 'Calculators & Tools', 'trend'],
+      ['m/expenses', 'Payments & Expenses (ETB)', 'chart'],
+      ['m/fixedassets', 'Fixed Assets Depreciation', 'building'],
+      ['tools', 'Calculators & Landed Cost', 'trend'],
     ],
   },
   {
     id: 'org',
-    sec: 'Organization & Admin',
+    sec: 'Intelligence & Admin',
     icon: 'building',
     collapsible: true,
     isSecondary: true,
     items: [
       ['org', 'Company & Context', 'building'],
-      ['reports', 'Reports & Analytics', 'chart'],
-      ['admin', 'Users & Settings', 'shield'],
+      ['reports', 'Master Report Center', 'chart'],
+      ['admin', 'Users, RBAC & Audit Trail', 'shield'],
     ],
   },
 ];
@@ -151,7 +155,7 @@ const NAV = [
 export function toggleSidebar(forceState) {
   const isCollapsed = forceState !== undefined ? forceState : !document.body.classList.contains('side-collapsed');
   document.body.classList.toggle('side-collapsed', isCollapsed);
-  try { localStorage.setItem('wf-side-collapsed', isCollapsed ? '1' : '0'); } catch (_) {}
+  try { localStorage.setItem('wf-side-collapsed', isCollapsed ? '1' : '0'); } catch (_) { }
   const btn = $('#sideCollapseBtn');
   if (btn) {
     btn.title = isCollapsed ? 'Expand sidebar (Ctrl+[)' : 'Collapse sidebar (Ctrl+[)';
@@ -511,8 +515,8 @@ function shell() {
         </div>
         <div class="side-brand-meta">
           <div class="side-brand-info">
-            <b>${tr('Quality Management System')}</b>
-            <small>Water Fit General Trading · Addis Ababa</small>
+            <b>WATERFIT OS</b>
+            <small>Smart Manufacturing &amp; Enterprise OS</small>
           </div>
           <span class="side-brand-iso"><span class="iso-dot"></span>ISO 9001:2015</span>
         </div>
@@ -746,7 +750,7 @@ export async function refreshCounts() {
 }
 
 export function setCrumbs(parts) {
-  $('#crumbs').innerHTML = [`<span>WF QMS</span>`, ...parts.map((p, i) => i === parts.length - 1 ? `<b>${esc(p)}</b>` : `<span>${esc(p)}</span>`)].join(icon('chevR', 'sm'));
+  $('#crumbs').innerHTML = [`<span>WATERFIT OS</span>`, ...parts.map((p, i) => i === parts.length - 1 ? `<b>${esc(p)}</b>` : `<span>${esc(p)}</span>`)].join(icon('chevR', 'sm'));
 }
 
 export async function route() {
@@ -762,6 +766,8 @@ export async function route() {
   const view = $('#view'); view.scrollTop = 0; window.scrollTo(0, 0);
   try {
     if (a === 'dashboard') await renderDashboard(view);
+    else if (a === 'advisor') await renderAdvisor(view);
+    else if (a === 'crm') await renderCrm(view);
     else if (a === 'tasks') await renderTasks(view);
     else if (a === 'documents' && b) await renderDocViewer(view, b);
     else if (a === 'documents') await renderDocuments(view);

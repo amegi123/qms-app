@@ -13635,6 +13635,38 @@
  ],
  "production": [
   {
+   "id": "production-mwt5u6xs",
+   "code": "PRD-2026-007",
+   "created": "2026-11-23T11:06:10.720Z",
+   "createdBy": "u7",
+   "title": "Oromia Water Works Construction Enterprise – HDPE Pipe PN16 (160mm & 250mm)",
+   "product": "HDPE Pipe PN16 (160mm & 250mm)",
+   "size": "160",
+   "meters": 1500,
+   "line": "Jwell Extrusion Line 1",
+   "resin": "PE 100",
+   "due": "2026-12-03",
+   "department": "Operation",
+   "owner": "u7",
+   "status": "planned",
+   "comments": [],
+   "attachments": [],
+   "links": [
+    {
+     "mod": "leads",
+     "id": "lead-1"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-11-23T11:06:10.720Z",
+     "by": "u7",
+     "action": "Production Order Scheduled from Lead LD-2026-001 (OP/WF/030 Branch B)",
+     "tone": "blue"
+    }
+   ]
+  },
+  {
    "id": "production-6",
    "code": "PRD-2026-006",
    "created": "2026-11-22T06:15:18.725Z",
@@ -14935,6 +14967,48 @@
  ],
  "purchasing": [
   {
+   "id": "purchasing-mwt5ulwc",
+   "code": "PUR-2026-006",
+   "created": "2026-11-23T11:06:30.108Z",
+   "createdBy": "u7",
+   "title": "Safety Gear",
+   "amount": 5000,
+   "department": "Operation",
+   "status": "requisition",
+   "comments": [],
+   "attachments": [],
+   "links": [],
+   "history": [
+    {
+     "at": "2026-11-23T11:06:30.109Z",
+     "by": "u7",
+     "action": "Created",
+     "tone": "gray"
+    }
+   ]
+  },
+  {
+   "id": "purchasing-mwt5u6xx",
+   "code": "PUR-2026-005",
+   "created": "2026-11-23T11:06:10.725Z",
+   "createdBy": "u7",
+   "title": "Self Approval Test PO",
+   "amount": 5000,
+   "department": "Marketing & Sales",
+   "status": "requisition",
+   "comments": [],
+   "attachments": [],
+   "links": [],
+   "history": [
+    {
+     "at": "2026-11-23T11:06:10.725Z",
+     "by": "u7",
+     "action": "Created",
+     "tone": "gray"
+    }
+   ]
+  },
+  {
    "id": "purchasing-4",
    "code": "PUR-2026-004",
    "created": "2026-11-19T06:36:18.725Z",
@@ -16156,6 +16230,36 @@
  ],
  "activity": [
   {
+   "at": "2026-11-23T11:06:30.109Z",
+   "by": "u7",
+   "ip": "::ffff:127.0.0.1",
+   "text": "Created Purchase PUR-2026-006",
+   "mod": "purchasing",
+   "id": "purchasing-mwt5ulwc",
+   "code": "PUR-2026-006",
+   "title": "Safety Gear"
+  },
+  {
+   "at": "2026-11-23T11:06:10.725Z",
+   "by": "u7",
+   "ip": "::ffff:127.0.0.1",
+   "text": "Created Purchase PUR-2026-005",
+   "mod": "purchasing",
+   "id": "purchasing-mwt5u6xx",
+   "code": "PUR-2026-005",
+   "title": "Self Approval Test PO"
+  },
+  {
+   "at": "2026-11-23T11:06:10.720Z",
+   "by": "u7",
+   "ip": "::ffff:127.0.0.1",
+   "text": "OP/WF/030 Branch B (Production Scheduled): PRD-2026-007 from LD-2026-001",
+   "mod": "production",
+   "id": "production-mwt5u6xs",
+   "code": "PRD-2026-007",
+   "title": "Oromia Water Works Construction Enterprise – HDPE Pipe PN16 (160mm & 250mm)"
+  },
+  {
    "at": "2026-11-23T04:57:02.894Z",
    "by": "u1",
    "ip": "::1",
@@ -17254,6 +17358,60 @@
    "id": "D0104",
    "code": "OF/WF/190",
    "title": "criateria for selection of supplier Sheet"
+  }
+ ],
+ "leads": [
+  {
+   "id": "lead-1",
+   "code": "LD-2026-001",
+   "customer": "Oromia Water Works Construction Enterprise",
+   "contact": "Ato Bekele (0911-234567)",
+   "channel": "Web",
+   "product": "HDPE Pipe PN16 (160mm & 250mm)",
+   "estimatedVal": 4850000,
+   "stage": "order_won",
+   "owner": "u7",
+   "notes": "Borehole supply project - tender specs verified",
+   "created": "2026-11-18"
+  },
+  {
+   "id": "lead-2",
+   "code": "LD-2026-002",
+   "customer": "Botor Construction PLC",
+   "contact": "W/ro Selam (0922-345678)",
+   "channel": "Referral",
+   "product": "HDPE Pipe PN10 (90mm)",
+   "estimatedVal": 1650000,
+   "stage": "order_won",
+   "owner": "u7",
+   "notes": "Ready for production scheduling",
+   "created": "2026-11-20"
+  },
+  {
+   "id": "lead-3",
+   "code": "LD-2026-003",
+   "customer": "Dire Dawa Agro Industrial Park",
+   "contact": "Eng. Fikru (0933-456789)",
+   "channel": "TikTok",
+   "product": "Drip Irrigation Pipe 16mm (400,000m)",
+   "estimatedVal": 3200000,
+   "stage": "qualified",
+   "owner": "u7",
+   "notes": "Commercial horticulture project - requested factory visit",
+   "created": "2026-11-21"
+  },
+  {
+   "id": "lead-4",
+   "code": "LD-2026-004",
+   "customer": "Addis Ababa Water & Sewerage Authority (AAWSA)",
+   "contact": "Procurement Directorate",
+   "channel": "Direct / Tender",
+   "product": "Single Wall Corrugated Pipe (DN 100mm)",
+   "estimatedVal": 7400000,
+   "stage": "inquiry",
+   "owner": "u7",
+   "notes": "Urban drainage rehabilitation project",
+   "created": "2026-11-22"
   }
  ]
 }

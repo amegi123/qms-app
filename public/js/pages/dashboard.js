@@ -34,7 +34,10 @@ export async function renderDashboard(view) {
     </div>
   `;
 
-  const d = await api('/dashboard');
+  const [d, adv] = await Promise.all([
+    api('/dashboard'),
+    api('/advisor')
+  ]);
   const k = d.kpi, u = state.user;
   const hour = new Date().getHours();
   const greet = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening';
@@ -57,21 +60,98 @@ export async function renderDashboard(view) {
         <div class="dash-eyebrow">
           <span>${new Date().toLocaleDateString(lang === 'am' ? 'am-ET' : undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</span>
           <span class="dash-dot">·</span>
-          <span class="dash-company">${esc(state.meta.org.name)} · eQMS</span>
+          <span class="dash-company">${esc(state.meta.org.name)} · WATERFIT OS</span>
         </div>
         <div class="dash-title-row">
           <h1>${greet}, ${esc(u.name.split(' ')[0])}</h1>
           <span class="dash-role-badge">${esc(state.meta.roles[u.role] || u.title)}</span>
         </div>
-        <p class="dash-desc">ISO 9001:2015 Quality Management System Overview &amp; Operational Health.</p>
+        <p class="dash-desc">Unified Smart Manufacturing &amp; Enterprise Management Platform · CEO Command Center</p>
       </div>
       <div class="dash-header-actions">
         <div class="dash-status-indicator" title="System is actively tracking ISO 9001:2015 workflows">
           <span class="live-pulse"></span>
-          <span>Audit-Ready Portal</span>
+          <span>WATERFIT OS Online</span>
         </div>
-        <a class="btn" href="#/reports">${icon('chart', 'sm')}Analytics</a>
+        <a class="btn" href="#/advisor">${icon('zap', 'sm')}AI Advisor</a>
+        <a class="btn" href="#/crm">${icon('trend', 'sm')}CRM Pipeline</a>
         <button class="btn primary" id="quickBtn">${icon('plus', 'sm')}Quick Action</button>
+      </div>
+    </div>
+
+    <!-- Executive CEO Command Center KPI Cards -->
+    <div class="exec-kpi-grid">
+      <a class="exec-kpi-card" href="#/crm">
+        <div class="exec-kpi-head">
+          <div class="exec-kpi-title">${icon('trend', 'sm')}Confirmed Sales (ETB)</div>
+          <span class="tag">Invoiced</span>
+        </div>
+        <div class="exec-kpi-val">ETB ${(adv.kpi.totalSalesETB / 1e6).toFixed(2)}M</div>
+        <div class="exec-kpi-sub">
+          <span>Active Pipeline: <b>ETB ${(adv.kpi.pipelineValETB / 1e6).toFixed(2)}M</b></span>
+          <span class="nowrap">${icon('arrowR', 'sm')}</span>
+        </div>
+      </a>
+
+      <a class="exec-kpi-card" href="#/m/shiftlogs">
+        <div class="exec-kpi-head">
+          <div class="exec-kpi-title">${icon('layers', 'sm')}Extrusion Scrap %</div>
+          <span class="badge plain ${adv.kpi.avgScrapRate <= 2.5 ? 'green' : 'amber'}">&lt; 2.5% max</span>
+        </div>
+        <div class="exec-kpi-val">${adv.kpi.avgScrapRate}%</div>
+        <div class="exec-kpi-sub">
+          <span>${adv.kpi.scrapStatus}</span>
+          <span class="nowrap">${icon('arrowR', 'sm')}</span>
+        </div>
+      </a>
+
+      <a class="exec-kpi-card" href="#/m/dispatch">
+        <div class="exec-kpi-head">
+          <div class="exec-kpi-title">${icon('check', 'sm')}Receivables &amp; Cashflow</div>
+          <span class="tag">30d Aging</span>
+        </div>
+        <div class="exec-kpi-val">ETB ${(adv.kpi.openReceivablesETB / 1e6).toFixed(2)}M</div>
+        <div class="exec-kpi-sub">
+          <span>Credit Tier Enforcement</span>
+          <span class="nowrap">${icon('arrowR', 'sm')}</span>
+        </div>
+      </a>
+
+      <a class="exec-kpi-card" href="#/m/inventory">
+        <div class="exec-kpi-head">
+          <div class="exec-kpi-title">${icon('alert', 'sm')}Critical Stock &amp; Quarantine</div>
+          <span class="badge plain ${adv.kpi.qualityHoldCount ? 'red' : 'green'}">${adv.kpi.qualityHoldCount ? `${adv.kpi.qualityHoldCount} Hold` : '0 Holds'}</span>
+        </div>
+        <div class="exec-kpi-val">${adv.kpi.lowStockCount} <span style="font-size:14px;color:var(--muted)">at reorder</span></div>
+        <div class="exec-kpi-sub">
+          <span>Quarantine Hard-Lock: Active</span>
+          <span class="nowrap">${icon('arrowR', 'sm')}</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Extrusion Plant Runtime & Temperatures Strip -->
+    <div class="extrusion-strip">
+      <div class="extrusion-strip-header">
+        <div class="extrusion-strip-title">${icon('zap', 'sm')}Extrusion Plant Runtime &amp; Barrel Temperature Zones (170–210 °C)</div>
+        <span class="badge plain green">4 Lines Running · Jwell, SWC, Drip</span>
+      </div>
+      <div class="extrusion-grid">
+        ${adv.lines.map((ln) => `
+          <div class="extrusion-card">
+            <div class="extrusion-card-top">
+              <b>${esc(ln.name)}</b>
+              <span class="badge plain green">${esc(ln.status)}</span>
+            </div>
+            <div class="extrusion-specs">${esc(ln.spec)}</div>
+            <div style="font-size:12px;font-weight:600;color:var(--ink-2)">${esc(ln.product)}</div>
+            <div class="extrusion-zones">
+              <span class="temp-pill">${esc(ln.tempStatus)}</span>
+              <span class="temp-pill">Speed: ${esc(ln.speed)}</span>
+              <span class="temp-pill">Scrap: ${esc(ln.scrap)}</span>
+            </div>
+          </div>
+        `).join('')}
       </div>
     </div>
 
@@ -86,7 +166,7 @@ export async function renderDashboard(view) {
       </div>
     ` : ''}
 
-    <!-- 4 Primary Executive Pillar KPI Cards -->
+    <!-- 4 Primary Quality Pillar KPI Cards -->
     <div class="dash-kpi-grid">
       <!-- Pillar 1: Document Control -->
       <a class="dash-kpi-card" href="#/documents">
