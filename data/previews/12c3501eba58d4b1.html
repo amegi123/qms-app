@@ -1,0 +1,701 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Inputs</title>
+  <meta name="Author" content="Tsige">
+  <meta name="LastAuthor" content="User">
+  <meta name="Company" content="QSAE">
+  <meta name="CreationTime" content="2019-10-21T01:37:00Z">
+  <meta name="ModificationTime" content="2019-10-21T01:37:00Z">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Times New Roman'}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p8 {margin: 0.0px 0.0px 0.0px 3.6px; font: 12.0px Times}
+    p.p9 {margin: 0.0px 4.5px 0.0px 0.0px; font: 12.0px Times}
+    p.p10 {margin: 0.0px 0.0px 0.0px 3.6px; text-align: center; font: 12.0px Times; min-height: 14.0px}
+    p.p11 {margin: 0.0px 4.5px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p12 {margin: 0.0px 0.0px 0.0px 7.1px; text-align: justify; font: 12.0px Times}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p14 {margin: 0.0px 0.0px 0.0px 7.1px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p15 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p16 {margin: 0.0px 0.0px 0.0px 26.1px; font: 12.0px Times; min-height: 14.0px}
+    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times}
+    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px Times}
+    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times; min-height: 11.0px}
+    p.p20 {margin: 0.0px 0.0px 0.0px 129.6px; font: 12.0px Times}
+    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; min-height: 14.0px}
+    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 12.0px Times; min-height: 14.0px}
+    p.p23 {margin: 0.0px 0.0px 0.0px 18.0px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p24 {margin: 0.0px 8.5px 0.0px 7.0px; text-align: justify; font: 12.0px Times}
+    p.p25 {margin: 0.0px 17.5px 0.0px 0.0px; font: 12.0px Times}
+    p.p26 {margin: 0.0px 17.5px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p28 {margin: 0.0px 0.0px 6.0px 0.0px; font: 12.0px Times}
+    p.p29 {margin: 6.0px 17.5px 6.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p30 {margin: 0.0px 8.1px 0.0px 3.6px; text-align: justify; font: 12.0px Times}
+    p.p31 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times}
+    p.p32 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p34 {margin: 12.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p35 {margin: 12.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p36 {margin: 12.0px 0.0px 12.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p37 {margin: 0.0px 8.5px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p38 {margin: 0.0px 8.5px 0.0px 0.0px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p41 {margin: 0.0px 0.0px 0.0px 18.0px; text-align: justify; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; color: #000000; min-height: 15.0px}
+    p.p44 {margin: 6.0px 0.0px 6.0px 0.0px; text-align: center; font: 12.0px Times; color: #000000}
+    p.p45 {margin: 6.0px 0.0px 6.0px 0.0px; font: 12.0px Times}
+    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    li.li7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    li.li26 {margin: 0.0px 17.5px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    li.li27 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    li.li33 {margin: 0.0px 17.5px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    li.li39 {margin: 0.0px 8.5px 0.0px 0.0px; font: 12.0px Times}
+    li.li40 {margin: 6.0px 0.0px 6.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    li.li42 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; color: #000000}
+    span.s1 {text-decoration: underline}
+    span.s2 {font: 9.0px Times}
+    span.s3 {color: #000000}
+    span.Apple-tab-span {white-space:pre}
+    table.t1 {border-collapse: collapse}
+    td.td1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #bfbfbf #bfbfbf #bfbfbf #bfbfbf; padding: 0.0px 5.0px 0.0px 5.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>ISSUE HISTORY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Issue</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Description of change</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Originator</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Effective date</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3">Initial Release</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">Task Force</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p4"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>REFERENCEDOCUMENT</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><b>Document No</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Document title</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3">EX/WF/001</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">ISO 9001:2015 Quality Management System - Requirements</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>CONTENT <span class="Apple-converted-space">                                                </span>PAGE</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">1. Purpose……………………………………..1</p>
+        <p class="p2">2. Scope………………………………….........1</p>
+        <p class="p2">3. Process owner………………………………1</p>
+        <p class="p2">4. Definition and abbreviation…………….…..2</p>
+        <p class="p2">5. Procedures……………………………...…..4</p>
+        <p class="p2">6. Risks………………………………………..9</p>
+        <p class="p2">6. Records……………………………………10</p>
+        <p class="p2">7. Related document…………………………10</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>FOR DOCUMENT CONTROL USE ONLY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><b></b><br></p>
+<p class="p4"><b></b><br></p>
+<p class="p4"><b></b><br></p>
+<p class="p4"><b></b><br></p>
+<p class="p4"><b></b><br></p>
+<p class="p4"><b></b><br></p>
+<ul class="ul1">
+  <li class="li3">PURPOSE</li>
+</ul>
+<p class="p6"><br></p>
+<p class="p3"><b>The purpose of this procedure is to define the system to undertake the timely receipts, storage, upkeep, handling, accounting, issue and disposals of materials.</b></p>
+<p class="p6"><b></b><br></p>
+<p class="p6"><b></b><br></p>
+<p class="p3">2. SCOPE</p>
+<p class="p6"><br></p>
+<p class="p2">The scope of <span class="Apple-converted-space">  </span>this procedure applies to all materials managed at head office and at project level from material delivery up to material issued and accepts final report.</p>
+<p class="p4"><br></p>
+<p class="p4"><br></p>
+<p class="p7"><b>3. PROCESS OWNER</b></p>
+<p class="p4"><b></b><br></p>
+<p class="p2">Procurement&amp; Supply Department</p>
+<p class="p4"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><b>Approved by:</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p9">Signature:</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p9"><b>Date:</b></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p2">7/10/2020</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8">Name:<span class="Apple-converted-space"> </span></p>
+        <p class="p2">AmanuelTesfaye</p>
+        <p class="p10"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p8">Designation:</p>
+        <p class="p2">General Manager</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p12"><b>4. DEFINITIONS</b></p>
+<p class="p2"><b>4.1DEFINITION</b></p>
+<p class="p7"><span class="s1"><b>Materials</b></span><b>:</b> are basic substances in its natural, modified, or semi processed state used as an input or to operations for subsequent modification or transformation into an output.<span class="Apple-converted-space"> </span></p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Materials Management (MM)</b></span><b>:</b>is the process of management which coordinates, supervises and executes the tasks associated with the flow of materials to, through, and out of an organization in an integrated fashion.</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Storehouse:</b></span> a place where items are housed or a building designed for storage purposes and constructed with roof and complete side and end walls.</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Store management</b></span><b>:</b> it is a process of planning, coordination and control of various activities pertaining to efficient, effective and economic storage and store keeping.</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Inspection:</b></span> to check all materials received.</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Storage:</b></span> to keep everything in its proper place</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Issue:</b></span> to issue materials and goods only when properly authorized.</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Store record:</b></span> to maintain a correct record of any thing received or issued form store.</p>
+<p class="p7"><span class="s1"><b>Stock control:</b></span> to arrange continuously receipts and issues to ensure that stock balances are sufficient, with due regard to economy.</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Stock verification:</b></span> to physically verify the quantity and condition of goods lying in the store.</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Identification:</b></span> to systematically define and describe all items in stock</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Stock accountant:</b></span> the person recording stock movements and balances in value in computer and stock cards.</p>
+<p class="p7"><span class="s1"><b>Material handling</b></span> means providing the right amount of the right material, in the right condition, at the right place, in the right position, in the right sequence, and for the right cost, by the right method(s).</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Receipt:</b></span> receipt is the process of accepting from all sources, all materials, equipment and parts used in the company.</p>
+<p class="p13"><br></p>
+<p class="p7"><span class="s1"><b>Holding:</b></span> although holding inventory results in additional cost it is necessary to maintain inventory to avoid running out of stock.<span class="Apple-converted-space"> </span></p>
+<p class="p14"><br></p>
+<p class="p4"><br></p>
+<p class="p15"><br></p>
+<p class="p15"><br></p>
+<p class="p15"><br></p>
+<p class="p2"><b>4.2. ABBREVIATIONS</b></p>
+<p class="p2"><b>WF: </b>Waterfit General Trading</p>
+<p class="p7"><b>BC</b>:Bin Card</p>
+<p class="p7"><b>SC</b>: Stock card</p>
+<p class="p7"><b>GRV</b>: Good Receiving Voucher<span class="Apple-converted-space"> </span></p>
+<p class="p7"><b>MR</b>: MaterialRequest<span class="Apple-converted-space"> </span></p>
+<p class="p7"><b>GIV</b>: Good Issues Voucher<span class="Apple-converted-space"> </span></p>
+<p class="p7"><b>FAR</b>: Fixed Asset Register<span class="Apple-converted-space"> </span></p>
+<p class="p2"><b>OP:</b> Operating Procedure</p>
+<p class="p2"><b>OF:</b> Operating Form</p>
+<p class="p2"><b>FLW: </b>Flowchart</p>
+<p class="p2"><b>GM:</b> General Manager<span class="Apple-converted-space"> </span></p>
+<p class="p3"><b>PSD</b>: Procurement &amp; Supply Department<span class="Apple-converted-space"> </span></p>
+<p class="p3"><b>MMS</b>: Materials Management Section</p>
+<p class="p3"><b>SK</b>: Store Keepers<span class="Apple-converted-space"> </span></p>
+<p class="p2"><b></b></p>
+<p class="p2"><b>5. PROCEDURE</b></p>
+<p class="p2"><b>5.2. Process FLW</b></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>In put</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>FLW</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Output</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Responsibility</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"><b></b><br></p>
+        <ul class="ul1">
+          <li class="li2">PR, Purchase oreder, Supplier Invoice, GRN</li>
+        </ul>
+        <p class="p16"><br></p>
+        <ul class="ul1">
+          <li class="li2">GRN, Material<span class="Apple-converted-space"> </span></li>
+        </ul>
+        <p class="p16"><br></p>
+        <ul class="ul1">
+          <li class="li2">Coded material record in Bin<span class="Apple-converted-space"> </span></li>
+        </ul>
+        <p class="p16"><br></p>
+        <p class="p16"><br></p>
+        <p class="p16"><br></p>
+        <ul class="ul1">
+          <li class="li2">Material Requsition, Minimum Stock Balance<span class="Apple-converted-space"> </span></li>
+        </ul>
+        <p class="p16"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <ul class="ul1">
+          <li class="li2">Approved MR</li>
+        </ul>
+        <p class="p16"><br></p>
+        <p class="p16"><br></p>
+        <p class="p16"><br></p>
+        <p class="p16"><br></p>
+        <p class="p2">6 .Store Issue<span class="Apple-converted-space"> </span></p>
+        <p class="p2">Voucher.<span class="Apple-converted-space"> </span></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">7.SIV</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>Receiving and inspecting of Material</b></p>
+        <p class="p18"><b>1</b></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p17">Identification</p>
+        <p class="p18"><b>2</b></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p4"><br></p>
+        <p class="p17"><b>Store Recording<span class="Apple-converted-space">   </span></b></p>
+        <p class="p18"><b>3</b></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p4"><br></p>
+        <p class="p17">Is the Material sufficient in store?</p>
+        <p class="p18"><b>4</b></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p2">Prepare PR (Purchase Requisition<b>)</b></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><br></p>
+        <p class="p20">No</p>
+        <p class="p21"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2"><span class="Apple-converted-space">            </span>Yes</p>
+        <p class="p17">Issue and dispatch</p>
+        <p class="p18"><b>5</b></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p4"><span class="Apple-tab-span">	</span></p>
+        <p class="p2">Is it Fixed asset or other material?</p>
+        <p class="p18"><b>6</b></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p2"><span class="s2">OP/</span>WF/023</p>
+        <p class="p4"><br></p>
+        <p class="p4"><span class="Apple-tab-span">	</span></p>
+        <p class="p1"><span class="Apple-converted-space">         </span>Fixed<span class="Apple-converted-space"> </span></p>
+        <p class="p2"><span class="Apple-converted-space">                                        </span>asset</p>
+        <p class="p2"><span class="Apple-converted-space">        </span>Other <span class="Apple-converted-space"> </span></p>
+        <p class="p2">Report (Total Issued quantity Report)<span class="Apple-converted-space"> </span></p>
+        <p class="p18"><b>7</b></p>
+        <p class="p19"><b></b><br></p>
+        <p class="p4"><span class="Apple-tab-span">	</span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p4"><br></p>
+        <p class="p2">1. GRN,</p>
+        <p class="p2">Inspected material<span class="Apple-converted-space"> </span></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">2.Coded material</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">3.Stock Balance</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">4. Approved MR, Purchase Request</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">5.Store Issue</p>
+        <p class="p2">Voucher.</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">6.Stock Balance /Inventory</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">7.Report</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p4"><br></p>
+        <p class="p2">1.MMS, Store keeper,</p>
+        <p class="p2">Requester</p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+        <p class="p2">2. Store Keeper</p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p2">3. Store Keeper</p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p2">4.MMS, Store keeper<span class="Apple-converted-space"> </span></p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">5.MMS, Store keeper</p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+        <p class="p2">6.MMS, Store Keeper<span class="Apple-converted-space"> </span></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">7.Stock Controller / Store Keeper, MMS</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+<p class="p4"><br></p>
+<ul class="ul1">
+  <ul class="ul1">
+    <li class="li2"><b>Process Steps Description</b></li>
+  </ul>
+</ul>
+<p class="p4"><b></b><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>FLW</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3"><b>Description</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7"><span class="s1"><b>Receiving and Inspection of materials<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p23"><span class="s1"><b></b></span><br></p>
+        <p class="p7">Receive the materials, check them for quantity are correct according to the invoice, coordinate for inspection and quality checks, and prepare the Goods Receiving Note (GRN);</p>
+        <ul class="ul1">
+          <li class="li7">Accept the past materials, prepare the rejection notes and complete the formalities for payment of bills;</li>
+          <li class="li7">Take into stock the accepted materials, store them in respective locations as predetermine.</li>
+          <li class="li7">The receiving department/MMS/ is responsible for the receipt identification and general inspection of all incoming materials. It is also responsible to notify all interested parties of arrival and condition of incoming material. It is at the receiving stage that the purchasing documents meet the physical materials.</li>
+        </ul>
+        <p class="p24">At this stage of material management functions the materials condition /status in critically examined to detect items which arrives detective, shortage in quantity, wrong shipment etc. and produce clerical report for immediate action. Any delays in this aspect mean a cost for the company.</p>
+        <p class="p2"><span class="s1"><b>Receiving report produced Should be used</b></span></p>
+        <ul class="ul1">
+          <li class="li7">As a basis invoice payment</li>
+          <li class="li7">For continued purchasing negotiation</li>
+          <li class="li7">For closing the order<span class="Apple-converted-space"> </span></li>
+        </ul>
+        <p class="p4"><br></p>
+        <p class="p2"><span class="s1"><b>Receiving Procedures <span class="Apple-converted-space"> </span></b></span></p>
+        <ul class="ul1">
+          <li class="li7">Unloading and checking the shipment</li>
+          <li class="li7">Unpacking and inspection the material</li>
+          <li class="li7">Completion of the receiving report<span class="Apple-converted-space"> </span></li>
+          <li class="li7">Delivery of the materials to requisitions<span class="Apple-converted-space"> </span></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s1"><b>Identification</b></span></p>
+        <p class="p7">The received goods should be identified by a clear way ofidentification. Without identification it is impossible to uniquely identify the materials needed. This problem can be solved using codification. The codification system applied both alphabetical &amp; numerical systems.</p>
+        <p class="p7">All material should be given a code identifying the material specifically, definitely, and unambiguously. Adopting a well-designed codification system enables the MMS/SK to have a unique, precise (i.e. exact), simple and consistent method of identifying stocks. Code should be compact, concise, and flexible enough to accommodate future addition.</p>
+        <p class="p13"><br></p>
+        <p class="p7">Coding of materials appropriately recorded<span class="Apple-converted-space">  </span>in <span class="s3">the user department</span> and store to give the following advantage:</p>
+        <ul class="ul1">
+          <li class="li7">A large number of store items are reduced to smaller group of items in a systematic way.</li>
+          <li class="li7">It is easier for storing, recording and accounting to deal with categories or classes of materials rather than individual items.</li>
+          <li class="li7">Classification and codification helps easy location of stores.</li>
+          <li class="li7">Easy identification of store items facilitates prompt service.</li>
+          <li class="li7">Possibility of duplicate stock of the same item kept under a different name or description is avoided.</li>
+          <li class="li7">Long descriptions of materials are avoidance. Nomenclature of materials is simplified by choosing symbols&amp; numbers which are simple, clear and free from duplication.</li>
+          <li class="li7">Systematic grouping helps in standardization of materials and encourages diverse uses of the same item.</li>
+          <li class="li7">It is useful for proper location of stores. It also forms a basis for setting up of different stores.</li>
+        </ul>
+        <p class="p2">The material items shall classified by:</p>
+        <ul class="ul1">
+          <li class="li3">Develop a unique identification method and describe<span class="Apple-converted-space"> </span></li>
+        </ul>
+        <p class="p2">A part from the above codification systems, a system by which the physical location of the items in the store should be identified. Each inventory items should be assigned as specific storage location.<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1">3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s1"><b>Store Recording</b></span></p>
+        <p class="p25">A good warehouse layout and good storage methods yield the following benefits</p>
+        <ul class="ul1">
+          <li class="li26">Ready accessibility of major materials.</li>
+          <li class="li26">Efficient space utilization and flexibility of arrangement.</li>
+          <li class="li26">A reduced need for materials handling equipment<span class="Apple-converted-space"> </span></li>
+          <li class="li26">Minimization of materials deterioration &amp; pilferages</li>
+          <li class="li26">Ease of physical counting<span class="Apple-converted-space"> </span></li>
+        </ul>
+        <p class="p26">The first and foremost attention that should be given while storing of materials is to understand different information’s about the items to be stocked.<span class="Apple-converted-space"> </span></p>
+        <p class="p26">All receipts, issues &amp; transactions must continually and faithfully be recorded/ in <b>bin cards</b>. The balance shall be recorded immediately with the identification number, location and so on.</p>
+        <ul class="ul1">
+          <ul class="ul1">
+            <li class="li7"><b>The company<span class="Apple-converted-space">  </span>shallapply the following basic Principles of storage:</b></li>
+          </ul>
+        </ul>
+        <ul class="ul1">
+          <li class="li7">All the materials must be identified and coded. This helps in establishing their nature or identity.</li>
+          <li class="li7">Name, class and reference number should be recorded by each item of material.</li>
+          <li class="li7">To indicate the materials stored in bins, racks, shelves, etc. it must have signs or tags attached on them.</li>
+          <li class="li7">The storeroom should be divided into sections, and the materials/goods belonging to one class should be stored in each section.</li>
+          <li class="li7">In order to protect the materials from damage in storage, provision of proper storage space particular must be provided.</li>
+          <li class="li7">Floor plan showing the various section of storeroom should be posted indifferent parts of the storeroom. This helps eliminating wastage of time in the location of a particular material.</li>
+          <li class="li7">There must be a constant check on the balance on hand of quantities stored. Regular program of inspection, physical verification and maintenance of stores shall be in place.</li>
+          <li class="li7">Entry inside stores should be restricted.</li>
+          <li class="li7">No materials should be allowed to pass out from the stores, unless a written request of someone in authority is received.</li>
+          <li class="li27">Special attention must be given to perishable materials. Inflammable materials such as petrol, kerosene, oil, etc. should be stored in a place far away from the others items.</li>
+          <li class="li27">Oldest material should issue first.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1">4</p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"><span class="s1"><b>Store Request</b></span></p>
+        <p class="p29"><b>Store Requisition</b> (SR) Shall be Authorized by the User Department Head. Authorized SR shall be reviewed by the Store keeper to check and identify the stock level and stock balance .If the stock is available it shall be recorded in the <b>Store Issue Voucher</b>and dispatched fromstore. If the material is not available or not sufficient,<b>Purchase Requisition</b> (PR) will be prepared. No materials should be allowed to pass out from the stores, unless approved MaterialRequest is received.<span class="Apple-converted-space"> </span></p>
+        <p class="p30">The purchase request must be authorized by the appropriate authority. The authority should see that the material requested is within the budget allocated tothe concerned department.<span class="Apple-converted-space">   </span></p>
+        <p class="p31"><span class="s1"><b>Origination of Purchase Requisition (PR)</b></span></p>
+        <p class="p32">Purchase Requisition is a document generated by the store that authorizes material purchase.The need for purchase originates in the MMS or in the User department.<span class="Apple-converted-space">  </span>This need for purchase is transmitted to the ProcurementSection by approved Purchase Requisition.<span class="Apple-converted-space">  </span>The Purchase Requisition is a serially numbered internal document by which the need for purchase is transmitted or communicated.<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1">5.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s1"><b>Issue and dispatch</b></span></p>
+        <p class="p21"><span class="s1"><b></b></span><br></p>
+        <ul class="ul1">
+          <li class="li26">SR approved by concerned authority, who decides the withdrawal of materials from the store shall be recorded properlyin <b>Store IssueVouchers</b>. The materials, withdrawn form a store have to be authorized. Only the requested quantity should be Issued</li>
+          <li class="li33"><b>StoreIssue Voucher</b> signed in appropriate form by individual who receive the material.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><br></p>
+        <p class="p2">6</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s1"><b>Selection of Fixed Asset<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p34">Fixed Asset consists of all property owned by the company with a useful life of more than one year and a minimum cost of Br 1000 are categorized under this group. Items under 1000 Br are expensed automaticallyand registered by store section<b>.</b></p>
+        <p class="p35"><b>*</b>Items in the store that has fixed asset nature and<b> not issued from the store <span class="Apple-tab-span">	</span></b>until issued date <b>should not be</b> included in this category; rather they will be included as stock items.</p>
+        <p class="p36">After the materials had been delivered, User Department shall be responsible for materials stored in their areas. The material delivered to users shall be used within a <b>month</b>, and it shall not be subjected to a high rate of deterioration or obsolescence Un used Materials shall be returned to store. To determine the actual usage of material during a given period, it is necessary to take a physical count of the material at the end of the period and to compare this figure with the similar beginning-period figures (which has been adjusted for materials receipts during the period). Hence, accounting changes are determined indirectly rather than directly. As a result, the system provides control over material usage only if it is used in conjunction with an accounting system employing standard cost techniques.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">7</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p37"><span class="s1"><b>Report<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p38"><span class="s1"><b></b></span><br></p>
+        <p class="p37">Finally the material issued from the warehouse the Store Keeper / MMS prepares the issued material quantity and amount depends on by Store Issue Voucher.<span class="Apple-converted-space"> </span></p>
+        <p class="p38"><br></p>
+        <p class="p37">These reports prepared daily and summarize Monthly. they finally prepared and approved by concerned body and send the report to PSD.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p13"><br></p>
+<p class="p7"><b>5.3 Supplementary Issues</b></p>
+<ul class="ul1">
+  <li class="li39"><b>Bin Card: -</b> Cards which shows the receipt, issuer, stock balance and location of the <span class="s3">items record by store keeper code settles ware house.</span></li>
+  <li class="li39"><b>Stock Card:</b> - Cards which shows the receipt, issue, unit price, stock balance, total price the same us to bin cards this card recorded by stock Clark/ stock account. The balance should be equal to the bin card.<span class="Apple-converted-space"> </span></li>
+  <li class="li39"><b>GoodsReceiving Voucher (GRV): - </b>This is a receiving pad recorded by store keeper/ stock Clark all requested question fulfills and distribute the GRN immediately the material received after that distribution.<span class="Apple-converted-space"> </span></li>
+  <li class="li39"><b>Material request:</b> - This pad prepares by user department. Afterapproved the pad to check by the stock accountant then issued the material from store.<span class="Apple-converted-space"> </span></li>
+  <li class="li39"><b>Store Issues Voucher:</b> - Incoming of approved store requests the material record form MR and signs the receiver and issued from the store.</li>
+  <li class="li39"><b>Fixed Asset Register:</b> -This format records the fixed asset separately and calculates the deterioration form value.</li>
+</ul>
+<p class="p4"><br></p>
+<ul class="ul1">
+  <li class="li7"><b>RISKS</b></li>
+</ul>
+<ul class="ul1">
+  <li class="li40">Miscounting of materials</li>
+  <li class="li40">Typing error</li>
+  <li class="li40">Overlooking insignificant non-conformities of received materials when inspecting</li>
+  <li class="li40">Not updating stock balance on time</li>
+  <li class="li40">Unclear materials description when request</li>
+  <li class="li40">Approvals take too long</li>
+  <li class="li40">Issuing &amp; Dispatching take too long</li>
+  <li class="li40">Report writing take too long</li>
+</ul>
+<p class="p41"><br></p>
+<p class="p2"><b></b></p>
+<ul class="ul1">
+  <li class="li7"><b>RECORDS</b></li>
+</ul>
+<p class="p7">The Material management /Supply Division head shall keep the following records.</p>
+<ul class="ul1">
+  <li class="li7"></li>
+</ul>
+<ul class="ul1">
+  <li class="li7">Purchase Request Records<span class="Apple-converted-space"> </span></li>
+  <li class="li7">Good Receiving Voucher Records</li>
+  <li class="li7">Stock Card Records</li>
+  <li class="li7">Bin card records<span class="Apple-converted-space"> </span></li>
+  <li class="li7">Store Issue voucher records<span class="Apple-converted-space"> </span></li>
+  <li class="li2">Total Stock Balance Available in store</li>
+  <li class="li7">Fixed Asset Registrar</li>
+  <li class="li7">StoreRequisition<span class="Apple-converted-space"> </span></li>
+  <li class="li2">Minimum &amp; Maximum Stock Balance Records</li>
+</ul>
+<p class="p4"><br></p>
+<ul class="ul1">
+  <li class="li42"><b>RELATED DOCUMENTS</b></li>
+</ul>
+<p class="p43"><b></b><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p44"><b>Document Number</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p44"><b>Document Title</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p45">OF/WF/165-180</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p45">Materials Management<span class="Apple-converted-space">  </span>Operating Formats</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p45">OF/WF/181-200</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p45">Purchasing Operating Formats<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+</body>
+</html>

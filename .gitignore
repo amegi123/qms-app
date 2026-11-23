@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# OS / editor / logs
+.DS_Store
+*.log
+.env
+
+# runtime files created by the app
+uploads/
+data/backups/
+data/text/
+
+# The files below are generated from the company's QMS documents (document text, previews, search index).
+# They are small and let the demo run without the source folder, but they contain company content:
+# keep the GitHub repository PRIVATE, or uncomment these lines to publish the code only.
+# data/db.json
+# data/fulltext.json
+# data/previews/

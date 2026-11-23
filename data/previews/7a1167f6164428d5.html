@@ -1,0 +1,856 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Inputs</title>
+  <meta name="Author" content="Tsige">
+  <meta name="LastAuthor" content="User">
+  <meta name="Company" content="QSAE">
+  <meta name="CreationTime" content="2013-07-11T11:55:00Z">
+  <meta name="ModificationTime" content="2013-07-11T11:55:00Z">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Times New Roman'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times}
+    p.p3 {margin: 3.0px 0.0px 3.0px 0.0px; font: 12.0px Times}
+    p.p4 {margin: 3.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    p.p5 {margin: 3.0px 0.0px 3.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p13 {margin: 0.0px 0.0px 0.0px 7.1px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; min-height: 14.0px}
+    p.p15 {margin: 0.0px 0.0px 0.0px 7.1px; text-align: justify; font: 12.0px Times}
+    p.p16 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p17 {margin: 0.0px 0.0px 0.0px 4.3px; text-align: justify; font: 12.0px Times}
+    p.p18 {margin: 0.0px 0.0px 0.0px 4.5px; font: 12.0px Times}
+    p.p19 {margin: 0.0px 0.0px 0.0px 4.5px; font: 12.0px 'Times New Roman'}
+    p.p20 {margin: 0.0px 0.0px 0.0px 4.3px; text-align: justify; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p21 {margin: 0.0px 0.0px 0.0px 26.1px; font: 12.0px Times; min-height: 14.0px}
+    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times}
+    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times}
+    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times; min-height: 13.0px}
+    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times; min-height: 11.0px}
+    p.p26 {margin: 0.0px 0.0px 0.0px 21.6px; font: 8.0px Times}
+    p.p27 {margin: 0.0px 0.0px 0.0px 21.6px; font: 12.0px Times}
+    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 9.0px Times; min-height: 11.0px}
+    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 12.0px Times}
+    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 12.0px Times; min-height: 14.0px}
+    p.p31 {margin: 0.0px 0.0px 0.0px 16.1px; font: 12.0px Times; min-height: 14.0px}
+    p.p32 {margin: 0.0px 17.5px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p34 {margin: 0.0px 17.5px 0.0px 0.0px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p35 {margin: 0.0px 8.1px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p37 {margin: 0.0px 8.5px 0.0px 11.6px; text-align: justify; font: 12.0px Times}
+    p.p38 {margin: 0.0px 8.5px 0.0px 11.6px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p40 {margin: 0.0px 8.5px 0.0px 7.0px; text-align: justify; font: 12.0px Times}
+    p.p41 {margin: 0.0px 8.5px 0.0px 25.1px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p42 {margin: 0.0px 8.5px 0.0px 25.1px; text-align: justify; font: 12.0px Times}
+    p.p44 {margin: 6.0px 8.1px 6.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p45 {margin: 6.0px 8.1px 6.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p47 {margin: 6.0px 7.9px 6.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p48 {margin: 6.0px 0.0px 6.0px 0.0px; font: 12.0px Times; color: #000000}
+    p.p49 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000}
+    p.p50 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; min-height: 14.0px}
+    li.li7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    li.li8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    li.li9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    li.li12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    li.li33 {margin: 0.0px 17.5px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    li.li39 {margin: 0.0px 8.5px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    li.li43 {margin: 0.0px 8.1px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    li.li46 {margin: 6.0px 7.9px 6.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    span.s1 {font: 12.0px Times}
+    span.s2 {text-decoration: underline}
+    span.s3 {font: 8.0px Times}
+    span.Apple-tab-span {white-space:pre}
+    table.t1 {border-collapse: collapse}
+    td.td1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #bfbfbf #bfbfbf #bfbfbf #bfbfbf; padding: 0.0px 5.0px 0.0px 5.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>ISSUE HISTORY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Issue No</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Description of Change</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Originator</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Effective Date</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p4">Initial Release</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3">Task Force</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p5"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p6"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>REFERENCE DOCUMENTS</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Document Number</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Document Title</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">EX/WF/001</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">ISO 9001: 2015Quality<span class="Apple-converted-space">  </span>Management System – Requirements<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p6"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>FOR DOCUMENT CONTROL USE ONLY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b><span class="Apple-tab-span">	</span></b></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p6"><b></b><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>CONTENT</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>PAGE</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">1<span class="Apple-converted-space">    </span>PURPOSE<span class="Apple-converted-space">   </span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">1</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">2<span class="Apple-converted-space">    </span>SCOPE</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">2</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">3<span class="Apple-converted-space">    </span>PROCESS OWNER</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">2</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">4<span class="Apple-converted-space">    </span>DEFINITION AND ABBREVIATION</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">2</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">5 <span class="Apple-converted-space">    </span>PROCEDURE <span class="Apple-converted-space">                                               </span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">3</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">6 <span class="Apple-converted-space">    </span>RISKS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">9</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">6 <span class="Apple-converted-space">    </span>RECORDS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">10</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">7 <span class="Apple-converted-space">    </span>RELATED DOCUMENTS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">10</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<ul class="ul1">
+  <li class="li8">PURPOSE</li>
+</ul>
+<p class="p9"><b>The purpose of this procedure is to define the process of Annual&amp; semi-annual Physical Inventory in WF. An inventory can be taken at any time using this process; however a full physical inventory must be taken in December 8&amp; July7to have a reconciled inventory for the fiscal year and to provide data for the determination of cost of service, cost of annual ending inventory </b><span class="s1"><b>&amp; </b></span><b>inventory report.</b></p>
+<p class="p10"><b></b><br></p>
+<p class="p8">2.<span class="Apple-converted-space">  </span>SCOPE</p>
+<p class="p7">The scope of <span class="Apple-converted-space">  </span>this procedure applies to all materials annual inventory in WFfrom the counting period up to the final report period. It takes approximately from 45-60 days from starting date usually December 8&amp; July7of each year.</p>
+<p class="p11"><br></p>
+<p class="p12"><b>3. PROCESS OWNER</b></p>
+<p class="p7">PSD, FinanceDepartment</p>
+<p class="p13"><br></p>
+<p class="p13"><br></p>
+<p class="p13"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7"><b>Approved by:</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">Signature:</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7"><b>Date:</b></p>
+        <p class="p14"><b></b><br></p>
+        <p class="p2">7/10/2020</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p7">Name:<span class="Apple-converted-space"> </span></p>
+        <p class="p2">Amanuel Tesfaye</p>
+        <p class="p14"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">Designation:</p>
+        <p class="p2">General Manager</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p15"><b>4. DEFINITIONS</b></p>
+<p class="p7"><b>4.1. Definition</b></p>
+<p class="p12"><span class="s2"><b>Physical inventory;</b></span> isan actual count of items/merchandise &amp; non-merchandise/ ininventory as contrasted with accepting the value shown on accounting record.<span class="Apple-converted-space"> </span></p>
+<p class="p12"><span class="s2"><b>Annual Physical Inventory:</b></span>the determination of inventory quantity &amp; its cost by actual count at the end of the year.</p>
+<p class="p16"><br></p>
+<p class="p7"><b>4.2. Abbreviations</b></p>
+<p class="p17"><b>BC:</b>Bin Card</p>
+<p class="p17"><b>SC:</b>Stock card</p>
+<p class="p17"><b>SR:</b>Store request<span class="Apple-converted-space"> </span></p>
+<p class="p17"><b>FAR:</b>Fixed Asset Register<span class="Apple-converted-space"> </span></p>
+<p class="p17"><b>SRV:</b>Store Return Voucher</p>
+<p class="p17"><b>GM: </b>General Manager</p>
+<p class="p17"><b>OP:</b> Operating Procedure</p>
+<p class="p17"><b>OF:</b> Operating Form</p>
+<p class="p18"><b>WF:</b>Waterfit General Trading</p>
+<p class="p17"><b>FLW: </b>Flowchart</p>
+<p class="p17"><b>GRV:</b>Goods Receiving Note</p>
+<p class="p17"><b>SIV:</b>Store Issue Voucher</p>
+<p class="p19"><b>PSD</b>: Procurement &amp; Supply Department<span class="Apple-converted-space"> </span></p>
+<p class="p19"><b>MMS</b>: Materials Management Section</p>
+<p class="p19"><b>SK</b>: Store Keepers<span class="Apple-converted-space"> </span></p>
+<p class="p20"><br></p>
+<p class="p7"><b></b></p>
+<p class="p7"><b>5. PROCEDURE</b></p>
+<p class="p7"><b>5.1. Process FLW</b></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>In put</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>FLW</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Output</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Responsibility<span class="Apple-converted-space"> </span></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><b></b><br></p>
+        <ul class="ul1">
+          <li class="li7">Inventory schedules</li>
+        </ul>
+        <p class="p21"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">2.Notification Letter</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">3.List of Material</p>
+        <p class="p21"><br></p>
+        <p class="p21"><br></p>
+        <p class="p7">4. Inventory Report</p>
+        <p class="p21"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">5.Analyzed Inventory Report</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">6.Analyzed Annual Inventory Report</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">7.Identified Discrepancy Report</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">8.Selected Wastage ,surplus &amp; Damage</p>
+        <p class="p7">Material</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">9.Disposal Request</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">10.Approved Disposal Request</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">Notify the warehouse and all departments<b>1</b></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p22">Planning and Preparation<span class="s1"><b>2</b></span></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">Executing a physical Inventory<b>3</b></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p22"><b>Analyzing Physical inventory result</b><span class="s1"><b>4</b></span></p>
+        <p class="p6"><br></p>
+        <p class="p22"><span class="s3"><b>Is</b></span> there any Discrepancy Happened?<span class="s1"><b>5</b></span></p>
+        <p class="p23">Inventory report</p>
+        <p class="p24"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">No</p>
+        <p class="p6"><br></p>
+        <p class="p7">Posting Count Discrepancy</p>
+        <p class="p7">What type of Discrepancy Happened?<b>6</b></p>
+        <p class="p22">Adjustment and corrected Report</p>
+        <p class="p25"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p26">Another<span class="Apple-converted-space"> </span></p>
+        <p class="p26">Discrepancy</p>
+        <p class="p27">Is it Shortage, Overage, wastage, damage or surplus?<b>7</b></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p6"><b></b><br></p>
+        <p class="p7">A</p>
+        <p class="p2">B</p>
+        <p class="p6"><br></p>
+        <p class="p7">Overage Shortage</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7"><span class="Apple-converted-space">  </span>Wastage/Surplass/damage</p>
+        <p class="p7">C</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">C</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">Prepare disposal request <span class="Apple-converted-space">    </span><b>8</b></p>
+        <p class="p6"><span class="Apple-tab-span">	</span></p>
+        <p class="p7">Approval</p>
+        <p class="p2"><b>9</b></p>
+        <p class="p22">Notification reject <span class="Apple-converted-space"> </span></p>
+        <p class="p6"><br></p>
+        <p class="p7"><span class="Apple-converted-space">                                              </span>No</p>
+        <p class="p7">Yes</p>
+        <p class="p7">Disposal of the material<b>10</b></p>
+        <p class="p6"><span class="Apple-tab-span">	</span></p>
+        <p class="p14"><br></p>
+        <p class="p14"><br></p>
+        <p class="p6"><span class="Apple-tab-span">	</span></p>
+        <p class="p6"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+        <p class="p7">A</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p22">Recorded By committee</p>
+        <p class="p28"><br></p>
+        <p class="p28"><br></p>
+        <p class="p28"><br></p>
+        <p class="p29">B</p>
+        <p class="p30"><br></p>
+        <p class="p6"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+        <p class="p22">Replace the same items/write warning letter</p>
+        <p class="p25"><br></p>
+        <p class="p6"><span class="Apple-tab-span">	</span></p>
+        <p class="p30"><br></p>
+        <p class="p6"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6"><br></p>
+        <p class="p7">1. Notification Letter</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">2. List of Total Stock Balance &amp; All Fixed assets.</p>
+        <p class="p6"><br></p>
+        <p class="p7">3.Inventory Report</p>
+        <p class="p6"><br></p>
+        <p class="p7">4.Analyzed Annual Inventory Report</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">5.Identified report</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">6. Identified report</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">7. Identified report</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">8.Disposal Request</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">9.Approved Disposal Request</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">10.Disposal Report</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+        <p class="p7">1.Store</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">2., Store Keeper,Stock Accountant</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">3.All Committee member &amp;MMS</p>
+        <p class="p6"><br></p>
+        <p class="p7">4.All Committee member &amp;Store keeper /Stock Accountant</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">5.All committee Member</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">6.All Committee Member<span class="Apple-converted-space"> </span></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">7.All Committee Member</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">8.All Committee Member</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">9.GM</p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p6"><br></p>
+        <p class="p7">10.Disposal</p>
+        <p class="p7">Committee member<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p12"><b>5.2. Process Steps Description</b></p>
+<p class="p6"><b></b><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>FLW</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p8"><b>Description</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p12">1.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p12"><span class="s2"><b>Notify the warehouse and all department</b></span></p>
+        <p class="p12">All annual inventories must be scheduled. This annual inventory schedule informs all user departments by official letter before 3 week from starting date. All responsibility ofWFemployee to accomplish the annual inventory period effectively, it needs more coordination and time management.</p>
+        <p class="p12">The goal of the annual inventory count is to obtained accurate information about inventories on hand which should be help to make right business decision, an alternative to a full physical inventory when all inventory is counted at a point in time is inventory cycle counts when you count inventory in portion throughout a year.</p>
+        <p class="p12"><span class="Apple-converted-space"> </span>Important reasons why a company conduct a physical inventory?</p>
+        <ul class="ul1">
+          <li class="li12">To verify or ascertain the physical count, condition and location of merchandise &amp; non- merchandise inventory items and to ensure that it is properly documented.</li>
+          <li class="li12">To identify, document and add items to its inventory list that are on-hand and meet qualifying criteria but are not currently shown as part of inventory.</li>
+          <li class="li12">To ensure that legitimately transferred or disposed of items are no longer carried on the inventory listing and finally to identify any missing or damaged items that need to be located, repaired or replaced.</li>
+          <li class="li12">The most obvious reasons are that you conduct a physical inventory to check it the inventory accounting record are accurate and complete at a particular time.</li>
+          <li class="li12">Physical inventory is not only an accounting requirement but also accurate stock quantity of WFmore likely to be successful completion of constructed house and also have better control of company stock levels and company money.</li>
+          <li class="li12">Should be to order the goods in the right quantity at the proper time avoiding over or under stock.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p12">2.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p12"><span class="s2"><b>Organization Of a committee member<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p12">A committee composed of three- sevenmembers to be organized at head office and branches level also designated by General Manager/ Deputy General Manager then orientation needs to be given based on this procedure on how to undertake inventory. The committees’ member needs to have the ability and experience of undertaking inventory and reporting on their finding and observation.</p>
+        <p class="p12">More than one committee can be organized for fixed assets, Non-fixed assets, stock items and vehicles inventory to minimize work load.</p>
+        <p class="p12">A committee which designated for the head office and branches might be segregated its duties by types of assets or locations to minimize work load.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p12">3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p32"><span class="s2"><b>Planning &amp; Preparation<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p32">A physical inventory is a time and resource consuming procedure which requires proper planning. The planning helps the warehouse and the committee member to make annual physical inventory counts more effective.</p>
+        <p class="p32">Establishment and documentation of counting procedure will allow to control and supervise physical inventory properly.</p>
+        <p class="p32"><b>First,</b> should be determining a date and time of conducting a physical inventory and inform all departments about it. Physical inventory counting takes place on different days because of several remote warehouse select a day when the company activities low.</p>
+        <p class="p32"><b>Second, </b>choose the methods of conducting a physical inventory in WFselect the best method, this method is A COUNT SHEET METHOD this method pre-printed lists of inventory (usually generated by company soft copy) are used to record on hand count.</p>
+        <p class="p32">This method the easiest and cheapest method less time consuming, searching counting, comparing and recording. A lot of time spent to find particular items during wall to wall counts items which are not in the listing or not in their place could be missed.</p>
+        <p class="p32"><b>Third</b>, should be prepare the warehouse make sure that all stock items are in their proper places and can be clearly identified clean up the store area, label all shelves and location, slow moving and nonmoving items can be counted and marked a day before a full physical inventory. Identify damage, discounted and absolute classes of items places them separately from inventory prepare and provide the plan of stock location.<span class="Apple-converted-space"> </span></p>
+        <p class="p32">In the last make sure all inventory is clearly identified and located in its assigned location the warehouse multiple location for items consolidation in to as few location as possible by combining smaller.<span class="Apple-converted-space"> </span></p>
+        <p class="p32">Don’t move, send or receive any material while your count is in progress containing it twice or missing it completely.</p>
+        <p class="p12"><span class="s2"><b>Executing a physical Inventory</b></span></p>
+        <p class="p32">A physical inventory process must be an independent position this means cannot be responsible for check in and receiving persons the committee member<span class="Apple-converted-space">  </span>organized out of this responsibility persons it reduce /avoid the internal theft.</p>
+        <p class="p32">Counting committee should not be given access to the inventory quantities recorded in the accounting record. This is called a blind count and helps to eliminate guessing on the part of counters as they would not know what the quantity is.</p>
+        <p class="p32">Stop productionoperation (inventory transaction) on the day of counting or exercise proper control over movement of inventories. Do not make any movement of items either in to or out of the warehouse (even if they are misplaced). Do not fill orders or receives good during the count period there is a great risk of missing any items or there double count.</p>
+        <ul class="ul1">
+          <li class="li33">Proper control over count cards (tags) sheet is needed ensure that all cards sheets issued to counting member are sequentially numbered accounted for and returned after the counting process is finished including those which were voided or unused.</li>
+          <li class="li33">Immediately compare your counts with accounting records audit the counts and conducts recount if there are unacceptable differences.</li>
+          <li class="li33">Mark counted items and location. This should be to ensure inventory completeness i.e.no missing items or items counted twice which an important aspect of any physical inventory is.</li>
+          <li class="li33">When verifying your counts. Give special attention to fast moving and volume items such items usually have a greater risk of counting errors in comparing to slow moving items.</li>
+        </ul>
+        <p class="p32">Responsible committee member verifies that the counts in the warehouses are accurate the quantities can be entered in your computer. Find several counting errors in an area the entire section should be recounted. When verification is successfully completed all counts are entered in to the computer.</p>
+        <p class="p34"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p12">4</p>
+        <p class="p11"><br></p>
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p35"><span class="s2"><b>Analyzing Physical Inventory Result</b></span></p>
+        <p class="p35">Analyzing the difference should estimate the effect they have on company process. Some of them may have little effect other may have significant effect and shows the areas where improvements are needed. Two methods of accuracy tracking are on hand –method &amp; transactional method. In WFselect on-hand accuracy tracking methods this indicate percentage of error at concrete point of time in this methods accuracy tracking calculates<span class="Apple-converted-space"> </span></p>
+        <p class="p35">Accuracy rate=<span class="s2">Total difference amount(Shortage/Overage)</span>X 100%</p>
+        <p class="p35"><span class="Apple-tab-span">	</span>On-hand inventory amount</p>
+        <p class="p35">Transactional methods shows the accuracy of company operation it is a correlation of the difference amount and total consumed inventory amount during the period should be inventory accuracy is within 3% inventory management to be effective.</p>
+        <p class="p35">To compare the result of previous physical counts for the reason of comparing current and last count results and seeing the effect of improvements in inventory management process.</p>
+        <p class="p35">In the last carefully investigated the discrepancies need to make adjustments. Adjustment need to be made in the inventory listing.</p>
+        <p class="p35">It should be useful for annual counting analyze the inventory count process in total and receive feedback from all department this feedback support for the next year count time updating inventory count policies and procedures.</p>
+        <p class="p35">The committee member need to determine the source of discrepancies and then decide how to reduce them in the future let’s consider possible sources of difference.The company material properly controlled and uses.<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p12">5.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p12"><span class="s2"><b>Counting material Shortage ,overage, waste, damage or surplus</b></span></p>
+        <p class="p11"><span class="s2"><b></b></span><br></p>
+        <p class="p32">During the counting period the company material will be happen material discrepancy this discrepancy identify where is the problem occurred, after the inventory finished the work has not stopped the assigned member several things to be address Overage/excess, shortage/missing, damage &amp; wastage/surplus.</p>
+        <ul class="ul1">
+          <li class="li33">The committee member identifies any overage items discovered during the inventory recorded immediately.</li>
+          <li class="li33">The committee member identifies any shortage, damage items discovered during the inventory this items record separately by another form to inform immediately for management. The committee an informal investigation regarding the damaged or missing item. The basic who, what, when, where, and how should be explained.<span class="Apple-converted-space"> </span></li>
+          <li class="li33">If any damage items are economically repairable the committee member record and transfer to the responsible department for its repair. The materials not repair record and ready for disposal.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p36"><br></p>
+        <p class="p12">7-8</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+        <p class="p12"><span class="s2"><b>Disposal of Surplus, Scrap and Waste</b></span></p>
+        <p class="p11"><span class="s2"><b></b></span><br></p>
+        <p class="p37">The final objective of inventory control is the detection of inactive stock items that may add to inventory investment without contributing any corresponding value.<span class="Apple-converted-space">  </span>Inactive items may arise due to several factors<span class="Apple-converted-space">  </span>such as:-<span class="Apple-converted-space"> </span></p>
+        <p class="p38"><br></p>
+        <ul class="ul1">
+          <li class="li39">Over acquisition, over buying and over delivering<span class="Apple-converted-space"> </span></li>
+          <li class="li39">Change in design and specification</li>
+          <li class="li39">Abandonment of project or cancellation of contracts<span class="Apple-converted-space"> </span></li>
+          <li class="li39">Undetected errors in materials accounting</li>
+          <li class="li39">Error in record keeping or breakage <span class="Apple-converted-space"> </span></li>
+        </ul>
+        <p class="p37">Surpluses, scrap and waste have to be dispose. Disposal returns to avoiding either through discarding or selling the items with book value.<span class="Apple-converted-space"> </span></p>
+        <p class="p40">Proper disposal of materials should be undertaken in conformance with the company policy and the dissection of committee member.<span class="Apple-converted-space"> </span></p>
+        <p class="p41"><br></p>
+        <p class="p42">The following alternative possibilities can be used for disposal of in active items.<span class="Apple-converted-space"> </span></p>
+        <ul class="ul1">
+          <li class="li39">Utilization /Cancelled from stock balance</li>
+          <li class="li39">Utilization by transfer to another project</li>
+          <li class="li39">Utilization by charge out/ discount on standard costs<span class="Apple-converted-space"> </span></li>
+          <li class="li39">Return to original supplier</li>
+          <li class="li39">Sales at book value on surplus scrap or salvage materials.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p12">9-10</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p12">No further description is needed.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p11"><br></p>
+<p class="p11"><br></p>
+<p class="p11"><br></p>
+<ul class="ul1">
+  <ul class="ul1">
+    <li class="li9"><b>Supplementary Issues</b></li>
+  </ul>
+</ul>
+<ul class="ul1">
+  <li class="li43">Internal theft is a typical for retailers Good internal control is needed to prevent this issue in the future such internal control includes use of security cameras control over trash disposal. The stock control should be supervised and record carefully, the manager should be led by example and maintain appropriate discipline over recording the transaction.</li>
+  <li class="li43">Shop lifting Use of security cameras and sensor tags will be very helpful to significant reduces this problem. This problem occurred during any time to inform to police and record carefully.</li>
+  <li class="li43">Administrative error can be identified through comparison of the differences among location (maybe there is a shortage in one and the overage in another location at the same time)</li>
+  <li class="li43">Purchased material shipment a purchaser sends a shipment of inventory and indicates a quantity sent higher than what is actually in the shipment. In such cases the best control is to count all inventories received to ensure that the actual quantity matches the number provided by the vendor in the shipping documents</li>
+</ul>
+<p class="p44"><br></p>
+<p class="p44"><br></p>
+<p class="p44"><br></p>
+<p class="p44"><br></p>
+<p class="p44"><br></p>
+<p class="p44"><br></p>
+<p class="p44"><br></p>
+<p class="p44"><br></p>
+<p class="p45"><b>6. RISKS</b></p>
+<ul class="ul1">
+  <li class="li46">Missing inventory schedules</li>
+  <li class="li46">Delay in schedule</li>
+  <li class="li46">Unexpected workload in respective departments</li>
+  <li class="li46">Disagreed departments and committees about the inventory schedule</li>
+  <li class="li46">Absence of personnel to be in a committee member<span class="Apple-converted-space"> </span></li>
+  <li class="li46">Shortage of finance<span class="Apple-converted-space"> </span></li>
+  <li class="li46">Improper preservation<span class="Apple-converted-space"> </span></li>
+  <li class="li46">Counting repeatedly</li>
+  <li class="li46">Miscounting / Double counting<span class="Apple-converted-space"> </span></li>
+  <li class="li46">Miss-registering of results</li>
+  <li class="li46">Errors when verifying results</li>
+  <li class="li46">Unclear results</li>
+  <li class="li46">Overlooking of discrepancies<span class="Apple-converted-space"> </span></li>
+  <li class="li46">Discussions for the action of discrepancies take too long</li>
+  <li class="li46">Disagreements when discussing the actions of discrepancies</li>
+  <li class="li46">Counting take too long</li>
+  <li class="li46">Improper record keeping<span class="Apple-converted-space"> </span></li>
+</ul>
+<p class="p47"><br></p>
+<p class="p35"><b>7. RECORDS</b></p>
+<ul class="ul1">
+  <li class="li43">Annual Inventory Report<span class="Apple-converted-space"> </span></li>
+  <li class="li43">Disposal Report<span class="Apple-converted-space"> </span></li>
+</ul>
+<p class="p7"><b>8. RELATED DOCUMENTS</b></p>
+<p class="p6"><b></b><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Document Number</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Document Title</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p48">OF/WF/158-176</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p49">Finance Operating Formats</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p48">OF/WF/165-180</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p49">Materials ManagementOperating Formats</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p50"><br></p>
+</body>
+</html>

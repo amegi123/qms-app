@@ -1,0 +1,959 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Author" content="Windows User">
+  <meta name="LastAuthor" content="Dell 5000">
+  <meta name="CreationTime" content="2017-06-29T07:06:00Z">
+  <meta name="ModificationTime" content="2017-06-29T07:06:00Z">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Times New Roman'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p5 {margin: 6.0px 0.0px 6.0px 0.0px; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p6 {margin: 6.0px 0.0px 6.0px 0.0px; font: 12.0px 'Times New Roman'}
+    p.p7 {margin: 6.0px 0.0px 6.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    p.p8 {margin: 0.0px 0.0px 0.0px 3.6px; font: 10.0px 'Times New Roman'}
+    p.p9 {margin: 0.0px 4.5px 0.0px 0.0px; font: 10.0px 'Times New Roman'}
+    p.p10 {margin: 0.0px 4.5px 0.0px 0.0px; text-align: center; font: 10.0px 'Times New Roman'; min-height: 11.0px}
+    p.p11 {margin: 0.0px 4.5px 0.0px 0.0px; text-align: center; font: 12.0px Times}
+    p.p12 {margin: 0.0px 0.0px 0.0px 3.6px; text-align: center; font: 12.0px 'Times New Roman'}
+    p.p13 {margin: 0.0px 0.0px 0.0px 3.6px; text-align: center; font: 12.0px Times}
+    p.p14 {margin: 0.0px 4.5px 0.0px 0.0px; font: 10.0px 'Times New Roman'; min-height: 11.0px}
+    p.p15 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px 'Times New Roman'}
+    p.p16 {margin: 6.0px 0.0px 6.0px 18.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    p.p17 {margin: 6.0px 0.0px 6.0px 18.0px; font: 12.0px 'Times New Roman'}
+    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times}
+    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p20 {margin: 0.0px 0.0px 0.0px 8.1px; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p21 {margin: 0.0px 0.0px 0.0px 8.1px; font: 12.0px 'Times New Roman'}
+    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Times New Roman'}
+    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Times New Roman'; min-height: 10.0px}
+    p.p25 {margin: 0.0px 0.0px 0.0px 16.1px; font: 12.0px Times; min-height: 14.0px}
+    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px 'Times New Roman'}
+    p.p27 {margin: 0.0px 0.0px 0.0px 16.1px; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p28 {margin: 0.0px 0.0px 0.0px 18.0px; text-align: center; font: 10.0px 'Times New Roman'}
+    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Times New Roman'}
+    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    p.p31 {margin: 0.0px 0.0px 0.0px 63.0px; font: 12.0px 'Times New Roman'}
+    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; color: #00000a}
+    p.p34 {margin: 0.0px 0.0px 0.0px 36.0px; font: 12.0px 'Times New Roman'}
+    p.p35 {margin: 0.0px 0.0px 0.0px 17.1px; font: 12.0px 'Times New Roman'}
+    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p37 {margin: 0.0px 0.0px 0.0px 22.5px; text-align: justify; font: 12.0px 'Times New Roman'}
+    p.p39 {margin: 6.0px 0.0px 6.0px 0.0px; text-align: center; font: 12.0px 'Times New Roman'}
+    p.p40 {margin: 12.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    li.li30 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    li.li33 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px 'Times New Roman'}
+    li.li38 {margin: 0.0px 0.0px 10.0px 0.0px; text-align: justify; font: 12.0px 'Times New Roman'}
+    span.s1 {font: 10.0px 'Times New Roman'}
+    span.Apple-tab-span {white-space:pre}
+    table.t1 {border-collapse: collapse}
+    td.td1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #bfbfbf #bfbfbf #bfbfbf #bfbfbf; padding: 0.0px 5.0px 0.0px 5.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>ISSUE HISTORY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Issue</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Description of change</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Originator</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Effective date</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">Initial Release</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">Task Force</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>REFERENCEDOCUMENT</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Document No</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Document title</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">EX/WF/001</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">ISO 9001:2015 Quality Management System - Requirements</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>CONTENT<span class="Apple-converted-space">                                                        </span>PAGE</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">1. Purpose………………………………………….1</p>
+        <p class="p2">2. Scope…………………………………...............1</p>
+        <p class="p2">3. Process owner…………………………………..1</p>
+        <p class="p2">4. Definition and abbreviation……………..……..2</p>
+        <p class="p2">5. Procedures………………………………...……3</p>
+        <p class="p2">6. Risks…………………………………………...10</p>
+        <p class="p2">6. Records………………………………………..11</p>
+        <p class="p2">7. Related document………………………….…..11</p>
+        <p class="p4"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>FOR DOCUMENT CONTROL USE ONLY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><b></b><br></p>
+        <p class="p3"><b></b><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p5"><b></b><br></p>
+<p class="p6"><b>1. PURPOSE</b></p>
+<p class="p7">The purpose of this procedure shows the process of purchasing in WF.</p>
+<p class="p5"><br></p>
+<p class="p6"><b>2. SCOPE</b></p>
+<p class="p6">This procedure applies to purchasing activities carried out to buy all kinds of materials needed internally for company operations.</p>
+<p class="p5"><br></p>
+<p class="p6"><b>3. PROCESS OWNER</b></p>
+<p class="p6">Procurement &amp; Supply Department, Procurement Section</p>
+<p class="p5"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><b>Approved by:</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p9">Signature:</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p9"><b>Date:</b></p>
+        <p class="p10"><b></b><br></p>
+        <p class="p11">7/10/2020</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8">Name:<span class="Apple-converted-space"> </span></p>
+        <p class="p12">Amanuel Tesfaye</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p8">Designation:</p>
+        <p class="p13">General Manager<span class="s1"><b><span class="Apple-converted-space"> </span></b></span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><b>4. DEFINITIONS AND ABBREVIATIONS</b></p>
+<p class="p2"><b>4.1 DEFINITION<span class="Apple-converted-space"> </span></b></p>
+<p class="p2">For the purpose of this document in addition to the definitions given in ISO 9000:2015 the following definitions apply</p>
+<p class="p2"><b>Purchasing (Supplies): </b>It involves buying all Materials needed for organization operations.</p>
+<p class="p2"><b>4.2 ABBREVIATION</b></p>
+<p class="p15"><b>ISO:</b> <span class="Apple-converted-space">  </span>International Organization for Standard</p>
+<p class="p16"><b>FLW:<span class="Apple-converted-space">  </span></b>Flow Chart</p>
+<p class="p16"><b>OP: </b>Operating Procedure</p>
+<p class="p16"><b>OF: </b>Operating Form</p>
+<p class="p16"><b>EX:</b> External Document</p>
+<p class="p17"><b>GM: </b>General Manager</p>
+<p class="p17"><b>FD: </b>Finance Department</p>
+<p class="p17"><b>PSD:</b> Procurement &amp; Supply Department</p>
+<p class="p17"><b>PS: </b>Procurement Section</p>
+<p class="p17"><b>Dept.:</b> Departments</p>
+<p class="p17"><b>WF: </b>Water fit General Trading</p>
+<p class="p2"><b></b></p>
+<p class="p2"><b>5. PROCEDURE</b></p>
+<p class="p2"><b>5.1 Flow chart</b></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p18"><b>INPUT</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b>FLW</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b>OUTPUT</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b>RESPONSIBILITY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p19"><b></b><br></p>
+        <p class="p2">1. Approved PR, Service Request</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">2. Received PR</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">3.Local Purchase</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">4.Verified PR</p>
+        <p class="p2">Supplier List</p>
+        <p class="p20"><br></p>
+        <p class="p20"><br></p>
+        <p class="p21">5.PR / Quotation</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">6.Collected Performa</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">7.Material Sample</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">8. Sample approval format, Performa &amp; committee Minute</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">1. Receiving Purchase Request</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">2. Local (L) or Foreign (F)?</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p22"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>F</p>
+        <p class="p23">A</p>
+        <p class="p19"><br></p>
+        <p class="p2">3. Verification of Authority &amp; Budget<span class="Apple-converted-space"> </span></p>
+        <p class="p4"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">4. Prepare Request for quotation or bids</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">5. Collect Performa /bid</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">6. Opening of Performa Invoice</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">7. Are</p>
+        <p class="p1">Samples Approved?<span class="Apple-converted-space"> </span></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p22"><span class="Apple-tab-span">	</span>No</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">Yes</p>
+        <p class="p2">8. Evaluation of bids &amp; Selection of suppliers<span class="Apple-converted-space"> </span></p>
+        <p class="p1"><br>
+</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p19"><br></p>
+        <p class="p23">B</p>
+        <p class="p24"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24"><br></p>
+        <p class="p22">1. Received Purchase Requisition (PR)</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">2. Decision on L/F</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">3.Verified PR</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">4.Distribution of PR /quotation</p>
+        <p class="p19"><br></p>
+        <p class="p22">5.Collected quotation /Performa/bid</p>
+        <p class="p22">And Sample<span class="Apple-converted-space"> </span></p>
+        <p class="p19"><br></p>
+        <p class="p22">6.Opened<span class="Apple-converted-space">  </span>Performa</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">7.Approved Samples</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">8. Approved Samples &amp;Evaluation Sheet and selected supplier list</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><br></p>
+        <p class="p2">1. PS, Purchaser<span class="Apple-converted-space"> </span></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">2. PSD Head/GM</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">3.PSD Head/GM</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">4.PS, Purchaser</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">5. PS, Purchaser</p>
+        <p class="p3"><br></p>
+        <p class="p2">6.PSD,PS, Purchaser, Purchasing Committee<span class="Apple-converted-space"> </span></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">7.User Department</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">8. Purchaser / PS / PSD / FD/ user department,<span class="Apple-converted-space"> </span></p>
+        <p class="p2">Purchasing Committee</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">C</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p22">9.Approved Evaluation Sheet ,Selected Suppliers</p>
+        <p class="p19"><br></p>
+        <p class="p2">10.Contract purchase order, Evaluation Sheet<span class="Apple-converted-space"> </span></p>
+        <p class="p2">11.Contract Supplier / Cheque</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">12.PO Payment</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">13.Delivery note /Invoice Material</p>
+        <p class="p3"><br></p>
+        <p class="p2">14.GRV</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">B</p>
+        <p class="p3"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">9. Is it contract?</p>
+        <p class="p3"><br></p>
+        <p class="p22">No</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">Yes<span class="Apple-converted-space"> </span></p>
+        <p class="p2">10. Prepare contract and issue purchase Order<span class="Apple-converted-space">     </span></p>
+        <p class="p26"><b>9</b></p>
+        <p class="p24"><b></b><br></p>
+        <p class="p24"><b></b><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">11. Issue Payment Request</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p1"><br>
+</p>
+        <p class="p3"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">12. Follow up and expediting the order<span class="Apple-converted-space"> </span></p>
+        <p class="p4"><br></p>
+        <p class="p3"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">13 Inspecting, Receiving and Storing<span class="Apple-converted-space"> </span></p>
+        <p class="p26"><b>12</b></p>
+        <p class="p19"><span class="Apple-tab-span">	</span></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">14. Closing the order</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">9.Type of purchase decided</p>
+        <p class="p3"><br></p>
+        <p class="p2">10.Payment RequestedCheque</p>
+        <p class="p3"><br></p>
+        <p class="p2">11.Contract Document &amp; PO</p>
+        <p class="p3"><br></p>
+        <p class="p2">12.Acknowlagement Receiving the PO/Payment</p>
+        <p class="p3"><br></p>
+        <p class="p2">13.Reciving Report Inspection Report</p>
+        <p class="p3"><br></p>
+        <p class="p22">14.Report&amp;Settlement of Cheque<span class="Apple-converted-space">  </span>payment</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">9. PSD / PS, Purchaser</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">10. PSD/ PS, Purchaser</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">11. PS, Purchaser</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">12. PS, Purchaser<span class="Apple-converted-space"> </span></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">13.Purchaser, Store Keeper, Requester <span class="Apple-converted-space"> </span></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">14. PS, Purchaser</p>
+        <p class="p27"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">C</p>
+        <p class="p1">Starting bank process</p>
+        <p class="p15">- Insurance</p>
+        <p class="p15">- Fright and</p>
+        <p class="p15">- Bank process</p>
+        <p class="p28">19</p>
+        <p class="p1">Purchase ordering<span class="Apple-converted-space"> </span></p>
+        <p class="p29">18</p>
+        <p class="p18">Selecting Proforma</p>
+        <p class="p18">17</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">7A</p>
+        <p class="p1">Proforma collection<span class="Apple-converted-space"> </span></p>
+        <p class="p29">16</p>
+        <p class="p1">Preparing purchase requisition and approval</p>
+        <p class="p29">15</p>
+        <p class="p2">A</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p22">15. Foreign<span class="Apple-converted-space"> </span></p>
+        <p class="p22"><span class="Apple-converted-space">    </span>market<span class="Apple-converted-space"> </span></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">16. Purchase<span class="Apple-converted-space">  </span>requisition<span class="Apple-converted-space"> </span></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">17. Proforma <span class="Apple-converted-space"> </span></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">18. Selected Proforma<span class="Apple-converted-space"> </span></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">19. Purchase <span class="Apple-converted-space">  </span>order<span class="Apple-converted-space"> </span></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22">No</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p22"><span class="Apple-converted-space">       </span>Yes</p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p19"><br></p>
+        <p class="p19"><br></p>
+        <p class="p2">15. Purchase requisition</p>
+        <p class="p3"><br></p>
+        <p class="p2">16. Collected<span class="Apple-converted-space">    </span>Proforma<span class="Apple-converted-space"> </span></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">17. Selected<span class="Apple-converted-space">    </span>Proforma</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">18. Purchase ordered<span class="Apple-converted-space"> </span></p>
+        <p class="p3"><br></p>
+        <p class="p2">9A. Claim transpiration L/C, CAD, TT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">15. PSD, PS/Purchaser</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">16. PS/Purchaser</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">17. PSD, PS/Purchaser</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">18. PS/Purchaser</p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p3"><br></p>
+        <p class="p2">19.<span class="Apple-converted-space">  </span>PS/Purchaser</p>
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p2"><b>5.2 Description of process steps</b></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>FLW</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Description<span class="Apple-converted-space"> </span></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>1</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">PS, Purchaser shall receive the Approved Purchase Request and consult with the user Department Head / PSD to proceed with the purchasing process.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>2</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30">PSD Head or the General Manager make theDecision on the purchasing of<span class="Apple-converted-space">  </span>Local or foreign market.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>3</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Verification of Authority and Budget<span class="Apple-converted-space"> </span></b></p>
+        <p class="p2">The responsibility of the Materials Management Section or user department is to give details of items with full descriptions.<span class="Apple-converted-space">  </span>However, the responsibility of the PSD is to check whether the PR is within the budget limit or not and also checking the accuracy of the document.<span class="Apple-converted-space">  </span>Budget reference number writes in the purchase requisition.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>4,5</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Request for Quotation or Bids /Price Quotation/<span class="Apple-converted-space"> </span></b></p>
+        <p class="p2">This refers to identification and analysis of possible sources of supply.<span class="Apple-converted-space">  </span>A Quotation is a statement (Performa) acquired from potential suppliers.<span class="Apple-converted-space">  </span>Requests for Quotation are a process of initiating potential suppliers that are willing to compete to supply the required material. <span class="Apple-converted-space"> </span></p>
+        <p class="p2"><b>There are two types of Bids:</b></p>
+        <p class="p31"><b>Open Bid</b>– It is a type of bid where all potential suppliers are invited through mass media and advertising agents to participate in the bidding.</p>
+        <p class="p31"><b>Closed Bid</b>– In this case selected suppliers are approached (invited) to participate in the bid.<span class="Apple-converted-space">  </span>Here, the invitation can be made through personal contact, telephone or formal letter.</p>
+        <p class="p32"><i>Issuing of Enquires and Tender Collection<span class="Apple-converted-space"> </span></i></p>
+        <p class="p2">In the case of closed bid the company use letters or printed enquiry form because it knows the bidder.<span class="Apple-converted-space">  </span>But in the case of Open tender, the company use mass media.</p>
+        <p class="p2">Preparation of the tender involves:</p>
+        <ul class="ul1">
+          <li class="li2">Bidding Notice</li>
+          <li class="li2">Bidder’s instruction</li>
+          <li class="li2">Description of Materials</li>
+          <li class="li2">Samples and blue prints (when required)</li>
+          <li class="li2">Tender Documents</li>
+        </ul>
+        <p class="p2">In order to give general description of the materials; delivery time and point, term of payment, last date of submitting bids, general term and condition should be included. <span class="Apple-converted-space"> </span></p>
+        <p class="p2">In the process of collecting tenders the company need to set up separate boxes &amp; seal the boxes on the due date &amp; time.<span class="Apple-converted-space">  </span>After collecting the tender, the company needs to open the tender.<span class="Apple-converted-space">  </span>Tender opening involves the following activities.</p>
+        <ul class="ul1">
+          <li class="li2">Earnest money deposit</li>
+          <li class="li2">Time, date &amp; place should be specified<span class="Apple-converted-space"> </span></li>
+          <li class="li2">If the service or material needs special expertise or professionalism, virtual/technical team will be assigned.</li>
+          <li class="li2">In normal bidder selection when the money is below 100,000.00 the purchasing committee will open the tender.</li>
+        </ul>
+        <p class="p2">These and other things should enter the tender opening register or minute. The minute should contain price, delivery date, discount, delivery point, &amp; others if any.</p>
+        <p class="p2">Here suppliers that do not pay bid bonds should get back their letters unopened and bid letters arriving between the closing date and the opening date should also be returned to the supplier unopened.</p>
+        <ul class="ul1">
+          <li class="li33"><b>Note: </b>on some cases potential suppliers will be contacted directly and the purchasing will be executed with them.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>6</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Opening Of Performa Invoice</b></p>
+        <p class="p30">The request depends on the type of materials because some materials need price quotations and other not in the company items that have less than 5,000 birr value purchase directly without quotation; and 5001-50,000birr need Performa invoice. Above 100,001 birr the notice should be advertised on mass media as newspapers ,collected Performa opens by purchase committee member all purchases opened by<span class="Apple-converted-space">  </span>purchase committee opened Performa approved by General Manager or assigned person.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>7</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Sample Approval</b></p>
+        <p class="p2">The requested material specifications Prepared and material quality approved by user department by using sample or by visiting supplier’s premises.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>8,9</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Evaluation of Bids &amp; Selection of Suppliers</b></p>
+        <p class="p2">This is analysis of the potential suppler who fulfill the criteria of the company.<span class="Apple-converted-space">  </span>Suppliers are evaluated /reviewed by the following factors or selection criteria.</p>
+        <p class="p2"><span class="Apple-converted-space">        </span>► In terms of price proposed by the suppliers.</p>
+        <p class="p2"><span class="Apple-converted-space">        </span>► In terms of discount they offer.</p>
+        <p class="p2"><span class="Apple-converted-space">        </span>► In terms of the shipping terms</p>
+        <p class="p2"><span class="Apple-converted-space">        </span>► In terms of delivery date</p>
+        <p class="p2"><span class="Apple-converted-space">        </span>► In terms of reliability of the supplier by analyzing past performance</p>
+        <p class="p34"><span class="Apple-converted-space">        </span>► In terms of reciprocity (this refers to mutual interchange of favors, privileges in good sense)</p>
+        <p class="p2"><span class="Apple-converted-space">        </span>► In terms of quality of work &amp; other services</p>
+        <p class="p2">Here the lowest bidder usually wins the tender, but sometimes this bidder may be denied or not awarded to supply. This happens because of the following reasons;</p>
+        <ul class="ul1">
+          <li class="li2">A higher bidder may provide better after sale service.</li>
+          <li class="li2">A higher bidder may have better plant facilities and be able to offer quality provided than the low bidder.</li>
+          <li class="li2">The low bidder may not be reliable.</li>
+          <li class="li2">The reciprocity may favor some company other than the low bidder.</li>
+          <li class="li2">The low bidder may be located so far from the company.</li>
+          <li class="li2">Exceptional goodwill may exist between higher bidder &amp; the buyer.</li>
+          <li class="li2">The company may adhere to the policy of dealing with local suppliers.<span class="Apple-converted-space"> </span></li>
+        </ul>
+        <p class="p2"><b>Local Purchase Evaluation Sheet</b></p>
+        <ul class="ul1">
+          <li class="li33">After the opening of Performa invoice purchase evaluation sheet prepared by PS/Purchaser.</li>
+          <li class="li33">Purchase evaluation sheet is verified by PSD and finally approved by GM<b>.</b></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>10,11</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Issuing of Purchase Order</b></p>
+        <p class="p2">The Purchase Requisition gives the purchaser to order the materials described in the requisitions.<span class="Apple-converted-space">  </span>The Procurement Section / Purchaser should maintain or have access to an up-to-date list of vendors, which includes price, available discounts, estimated delivery time, and any other relevant information.<span class="Apple-converted-space">  </span>From this list, the Purchasing Section / Purchaser selects a vender from whom high quality materials can be obtained when needed at competitive cost is selected.<span class="Apple-converted-space">  </span>Then the purchaser completes a Purchase Order, which is a purchasing document that formalizes a purchase transaction with the seller.<span class="Apple-converted-space">  </span>So a Purchase Order is a serially numbered document that is used to make purchases.</p>
+        <p class="p2">The Purchase Order should contain the following information.<span class="Apple-converted-space"> </span></p>
+        <ul class="ul1">
+          <li class="li2">Suppliers name and address.<span class="Apple-converted-space"> </span></li>
+          <li class="li2">Quotation reference and date.</li>
+          <li class="li2">Description of items.</li>
+          <li class="li2">Quantity Ordered.</li>
+          <li class="li2">Unit Price.</li>
+          <li class="li2">Terms of Payment.</li>
+          <li class="li2">Date of the order.</li>
+          <li class="li2">Delivery date and<span class="Apple-converted-space"> </span></li>
+          <li class="li2">Signature of the purchasing agent</li>
+        </ul>
+        <p class="p2"><b>Issue Payment Request</b></p>
+        <p class="p2"><i>A</i>fter approval of evaluation sheet &amp; signed contract agreements to request the payment from finance department.</p>
+        <p class="p2"><b><span class="Apple-converted-space">                          </span>Payment Request</b></p>
+        <ul class="ul1">
+          <li class="li33">Payment request requested by purchase officer.</li>
+          <li class="li2">Payment request finally approved by GM<b>.</b></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>12</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><b>Follow-up and expediting the Order</b></p>
+        <p class="p30">Follow-up refers to reminding the supplier to insure the timely arrival of the Order. And expediting is speeding up or accelerating the receipt of the item before the agreed-up on time.<span class="Apple-converted-space">  </span>The later requires good relationship between the company &amp; supplier.</p>
+        <p class="p30">In WF, we will use manually &amp; computerized systems. Manually system is a calendar follow up system. This is keeping the follow up order on the required date when the next follow up is scheduled or suppliers list.This is filling order alphabetically on the top we are going to use a number running from 1 to 30/31 and put a visible colored mark on the date the next follow up is made.<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>13</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Receiving, Inspecting and Storing<span class="Apple-converted-space"> </span></b></p>
+        <p class="p2">When the items are received, the following receiving procedures are usually adopted.</p>
+        <ul class="ul1">
+          <li class="li2">Unpacking and checking the material – Compare for the right material that the packing ship contains with the materials received.<span class="Apple-converted-space">  </span>Here, we need to check for the right quantity and General Condition of the material.</li>
+          <li class="li2">Completing the receiving report and distribute this report to:</li>
+          <li class="li2">Delivery of materials: these materials may be delivered to the user department or to the Store.<span class="Apple-converted-space">  </span>Finally, whoever is received the material will sign on the receiving report.</li>
+        </ul>
+        <p class="p2"><b>Inspection Report</b>:<span class="Apple-tab-span">	</span></p>
+        <p class="p2">Whenever it is necessary to take technical inspection, we may make sample/all inspection.<span class="Apple-converted-space">  </span>This depends on the nature of material and/or on the description of those materials.<span class="Apple-converted-space">  </span>Based on this technical report, if the material is not useful (partly or wholly) the purchasing people will notify the supplier how to handle those items.<span class="Apple-converted-space">  </span>In this case the possible courses of action would be:</p>
+        <p class="p2">1.<span class="Apple-converted-space">  </span>Return the material to the supplier.</p>
+        <p class="p2">2.<span class="Apple-converted-space">  </span>Keep some of the more acceptable material and return the rest.</p>
+        <p class="p2">3.<span class="Apple-converted-space">  </span>Keep all and rework it to the point where it is acceptable.</p>
+        <p class="p32"><i>When is Inspection Justified?</i></p>
+        <p class="p2">This depends on economies of scale, which is based on two basic costs.</p>
+        <p class="p2">i.<span class="Apple-converted-space">  </span>Cost of Inspection</p>
+        <p class="p35">ii. Costs resulting from defectiveness entering the production operation and/or reaching customers.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>14</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>Closing the Order</b></p>
+        <p class="p2">After making the necessary payment to the vendor, closing an order simply entails a consolidation of all documents and correspondence relevant to the order in filling them in closed order file which include a purchase requisition, the open order file of the purchase order, the acknowledgement, the receiving report, the inspection report and any note or correspondence pertaining to the order.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>15</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">The PSD, PS/Purchaser shall open foreign purchase operation<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>16, 17</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">The PS/Purchasershall collect Proforma and Select the collected Proforma with PSD and get approval from GM</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>18</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">PS/Purchaser has responsibility to order purchase.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><b>19</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">Purchaser shall start the banking process and follow up till the purchased materials delivered.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><br></p>
+<p class="p36"><br></p>
+<p class="p36"><br></p>
+<p class="p36"><br></p>
+<p class="p30"><b>5.3. Supplementary Issues</b></p>
+<p class="p32">5.3.1. Important Issues in Purchasing</p>
+<p class="p30"><b>i. Make or Buy decision</b></p>
+<p class="p30"><b>ii. Organization of Purchasing<span class="Apple-converted-space"> </span></b></p>
+<p class="p37"><b>a. Centralized Purchasing</b></p>
+<p class="p30">This occurs when the authority and responsibility to handle the material needs of the company is given to one department.</p>
+<p class="p37"><b>b. Decentralized Purchasing<span class="Apple-converted-space"> </span></b></p>
+<p class="p30">This is to apply the project purchaser to purchase the material items of low value and of routine use are purchased under decentralization.</p>
+<p class="p37"><b>C. Computerized Purchasing<span class="Apple-converted-space"> </span></b></p>
+<p class="p30">This occurs when both the centralized and decentralized purchasing are operated in a company.<span class="Apple-converted-space">  </span>Items of high value and those that require high technical analysis and knowledge of experts are purchased under centralized purchasing. <span class="Apple-converted-space"> </span></p>
+<p class="p36"><br></p>
+<p class="p2"><b>5.3.2 Type of Purchasing<span class="Apple-converted-space"> </span></b></p>
+<p class="p30">This is the right time aspect of purchasing.<span class="Apple-converted-space">  </span>The quality of materials affects the price and time of purchase.<span class="Apple-converted-space">  </span>The company should have time of purchase for their construction process, because materials could have increase/decrease in price seasonably depending on the circumstances. <span class="Apple-converted-space"> </span></p>
+<p class="p30">Here based on time dimension, there are four time-based types of purchasing.<span class="Apple-converted-space">  </span>These are<span class="Apple-converted-space"> </span></p>
+<ul class="ul1">
+  <li class="li30">Hand to mouth</li>
+  <li class="li30">Current Requirement</li>
+  <li class="li30">Forward buying<span class="Apple-converted-space"> </span></li>
+  <li class="li30">Speculative buying</li>
+</ul>
+<p class="p30"><b>5.3.3. Discounts in Purchasing<span class="Apple-converted-space"> </span></b></p>
+<p class="p30">The other important factor which can influence the Procurement Section / Purchaser insuppler selection or tender evaluation is discount.<span class="Apple-converted-space">  </span>A discount is a reduction allowed by a seller to a purchasing department by the following discount methods</p>
+<p class="p37">i. Cash Discount</p>
+<p class="p37">ii. Quantity Discounts</p>
+<p class="p37">iii. Trade Discounts</p>
+<p class="p2"><b>6. RISKS</b></p>
+<ul class="ul1">
+  <li class="li38">Unclear/Incorrect purchasing information</li>
+  <li class="li38">Reviews and Approvals take too long</li>
+  <li class="li38">Collecting Proforma take too long</li>
+  <li class="li38">Lack of updated supplier list</li>
+  <li class="li38">Biased evaluation</li>
+  <li class="li38">Lack of required material in the market</li>
+  <li class="li38">Miscounting of materials</li>
+  <li class="li38">Typing error</li>
+  <li class="li38">Ambiguity of contracts</li>
+  <li class="li38">Sellers may not supply as per the prior contractual agreement &amp; specifications or may supply low quality products. <span class="Apple-converted-space"> </span></li>
+  <li class="li38">Goods in-transit may be lost, destroyed by fire, damaged due to different reasons.<span class="Apple-converted-space"> </span></li>
+  <li class="li38">The supplier may deliver products that reach its expiry date</li>
+  <li class="li38">Delay of payments<span class="Apple-converted-space"> </span></li>
+  <li class="li38">Overlooking insignificant non-conformities of purchased materials when inspecting</li>
+  <li class="li2">Delay of delivery</li>
+</ul>
+<p class="p2"><b>7. RECORDS</b></p>
+<ul class="ul1">
+  <li class="li38">Purchase Request Records<span class="Apple-converted-space"> </span></li>
+  <li class="li38">Material Request</li>
+  <li class="li38">Good Receiving Voucher<span class="Apple-converted-space"> </span></li>
+  <li class="li38">Supplier list</li>
+  <li class="li38">Supplier performance evaluation<span class="Apple-converted-space"> </span></li>
+  <li class="li38">Performa different supplier record</li>
+  <li class="li38">Purchase order<span class="Apple-converted-space"> </span></li>
+  <li class="li38">Evaluation record</li>
+  <li class="li38">Request for quotation <span class="Apple-converted-space">   </span></li>
+  <li class="li38">Purchase committee minute</li>
+</ul>
+<p class="p2"><b>8. RELATED DOCUMENTS</b></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p39"><b>Document Number</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p39"><b>Document Title</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p40">OF/WF/131-150</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p40">Finance Operating Formats</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p40">OF/WF/181-200</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p40">Purchasing Operating Formats<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><br></p>
+</body>
+</html>

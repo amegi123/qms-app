@@ -1,0 +1,9 @@
+{
+  "name": "Water Fit eQMS",
+  "short_name": "WF eQMS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a5bd3",
+  "icons": [{ "src": "/img/logo.png", "sizes": "453x307", "type": "image/png", "purpose": "any" }]
+}

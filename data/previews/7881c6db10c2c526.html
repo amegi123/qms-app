@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Inputs</title>
+  <meta name="Author" content="Tsige">
+  <meta name="LastAuthor" content="User">
+  <meta name="Company" content="QSAE">
+  <meta name="CreationTime" content="2017-08-02T13:42:00Z">
+  <meta name="ModificationTime" content="2017-08-02T13:42:00Z">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p6 {margin: 0.0px 0.0px 0.0px 3.6px; font: 12.0px Times}
+    p.p7 {margin: 0.0px 4.5px 0.0px 0.0px; font: 12.0px Times}
+    p.p8 {margin: 0.0px 0.0px 0.0px 3.6px; text-align: center; font: 12.0px Times; min-height: 14.0px}
+    p.p9 {margin: 0.0px 4.5px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p10 {margin: 0.0px 0.0px 0.0px 7.1px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p11 {margin: 0.0px 0.0px 0.0px 7.1px; text-align: justify; font: 12.0px Times}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times; min-height: 14.0px}
+    p.p13 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: justify; font: 12.0px Times}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p15 {margin: 0.0px 0.0px 0.0px 23.1px; font: 12.0px Times; min-height: 14.0px}
+    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times}
+    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px Times}
+    p.p18 {margin: 0.0px 0.0px 0.0px 4.5px; text-align: center; font: 11.0px Times}
+    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px Times}
+    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px Times; min-height: 11.0px}
+    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px Times; min-height: 13.0px}
+    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; min-height: 14.0px}
+    p.p24 {margin: 0.0px 0.0px 0.0px 18.0px; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #ff0000}
+    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #ff0000; min-height: 14.0px}
+    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times; color: #ff0000}
+    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times; color: #ff0000; min-height: 14.0px}
+    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000}
+    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; min-height: 14.0px}
+    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times; color: #000000}
+    p.p34 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Times; color: #000000; min-height: 14.0px}
+    p.p35 {margin: 0.0px 0.0px 0.0px 23.1px; font: 12.0px 'Times New Roman'}
+    p.p36 {margin: 6.0px 0.0px 6.0px 0.0px; font: 12.0px Times}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times}
+    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    li.li23 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Times New Roman'}
+    li.li29 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; color: #ff0000}
+    li.li32 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; color: #000000}
+    span.s1 {text-decoration: underline}
+    span.Apple-tab-span {white-space:pre}
+    table.t1 {border-collapse: collapse}
+    td.td1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #bfbfbf #bfbfbf #bfbfbf #bfbfbf; padding: 0.0px 5.0px 0.0px 5.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>ISSUE HISTORY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Issue</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Description of change</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Originator</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Effective date</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3">Initial Release</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">Task Force</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p4"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>REFERENCE DOCUMENT</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Document No</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Document title</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">EX/WF/001</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">ISO 9001:2015 Quality Management System - Requirements</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+<p class="p4"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>CONTENT</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>PAGE</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">1<span class="Apple-converted-space">    </span>PURPOSE<span class="Apple-converted-space">   </span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">1</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">2 <span class="Apple-converted-space">    </span>SCOPE</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">1</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">3 <span class="Apple-converted-space">    </span>PROCESS OWNER</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">1</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">4 <span class="Apple-converted-space">    </span>DEFINITION AND ABBREVIATION</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">2</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">5<span class="Apple-converted-space">      </span>PROCEDURE <span class="Apple-converted-space">                                               </span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">3</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">6<span class="Apple-converted-space">      </span>RISKS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">6</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">6<span class="Apple-converted-space">      </span>RECORDS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">6</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">7<span class="Apple-converted-space">      </span>RELATED DOCUMENTS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">7</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>FOR DOCUMENT CONTROL USE ONLY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b><span class="Apple-tab-span">	</span></b></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p4"><b></b><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><b></b><br></p>
+<p class="p4"><b></b><br></p>
+<p class="p4"><b></b><br></p>
+<p class="p4"><b></b><br></p>
+<p class="p3">1.<span class="Apple-converted-space">  </span>PURPOSE</p>
+<p class="p3">The purpose of this document is to define recording, protecting &amp;controlling Fixed Asset items by items with in WF.</p>
+<p class="p3">2.<span class="Apple-converted-space">  </span>SCOPE</p>
+<p class="p2">This procedure is applicable for all Fixed Assets in WF.</p>
+<p class="p4"><br></p>
+<p class="p5"><b>3. PROCESS OWNER</b></p>
+<p class="p2">PSD, Materials Management Section</p>
+<p class="p4"><br></p>
+<p class="p4"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6"><b>Approved by:</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7">Signature:</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p7"><b>Date:</b></p>
+        <p class="p4"><b></b><br></p>
+        <p class="p2">7/10/2020</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6">Name:<span class="Apple-converted-space"> </span></p>
+        <p class="p2">Amanuel Tesfaye</p>
+        <p class="p8"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p6">Designation:</p>
+        <p class="p2">General Manager</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p9"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p9"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p10"><br></p>
+<p class="p11"><b>4. DEFINITIONS&amp; ABBREVIATION</b></p>
+<p class="p4"><b></b><br></p>
+<p class="p2"><b>4.1 Definitions</b></p>
+<p class="p12"><b></b><br></p>
+<p class="p5"><b>Fixed Asset/ Non-current asset: </b>Any tangible or intangible asset that can be used in an operation of WFfor more than a year, and whose purchase price is more than Birr 1000.00is considered as non-current assets. The expected life or operational efficiency of such an asset can be extended or improved by major repair and maintenance works.</p>
+<p class="p12"><br></p>
+<p class="p5">Fixed asset includes office building, construction in progress, warehouses, plant and machinery, furniture &amp; equipment, computers, vehicles, leasehold land, land improvements, non-current assets in transit, long term investment, deferred costs, goodwill, etc….</p>
+<p class="p12"><br></p>
+<p class="p5">All acquisition of, betterments and improvements on, and disposals of non- current assets are made in accordance with the approved budget, and the authorization of the General Manager.</p>
+<p class="p12"><br></p>
+<p class="p13"><b>4.2 Abbreviation</b></p>
+<p class="p2"><b>GM: </b>General Manager</p>
+<p class="p2"><b>WF:</b> Water fit General Trading</p>
+<p class="p3"><b>PSD</b>: Procurement &amp; Supply Department<span class="Apple-converted-space"> </span></p>
+<p class="p3"><b>MMS</b>: Materials Management Section</p>
+<p class="p3"><b>SK</b>: Store Keepers<span class="Apple-converted-space"> </span></p>
+<p class="p3"><b>S/Acc</b>: Senior Accountant<span class="Apple-converted-space"> </span></p>
+<p class="p3"><b>FD</b>: Finance Department<span class="Apple-converted-space"> </span></p>
+<p class="p2"><b>OP:</b> Operating Procedure</p>
+<p class="p2"><b>OF:</b> Operating Form</p>
+<p class="p3"><b>FLW: </b>Flowchart</p>
+<p class="p3"><b>FA: </b>Fixed Asset</p>
+<p class="p3"><b>FAR:</b> Fixed Asset Register</p>
+<p class="p14"><br></p>
+<p class="p2"><b></b></p>
+<p class="p2"><b>5. PROCEDURE</b></p>
+<p class="p2"><b>5.2. Process FLW</b></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>IN PUT</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>PROCESS</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>OUTPUT</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>RESPONSIBILITY</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><b></b><br></p>
+        <ul class="ul1">
+          <li class="li2">Issued Non-Merchandise Issue Voucher</li>
+        </ul>
+        <p class="p15"><br></p>
+        <p class="p4"><br></p>
+        <ul class="ul1">
+          <li class="li2">Identified<span class="Apple-converted-space">  </span>FA</li>
+        </ul>
+        <p class="p15"><br></p>
+        <p class="p15"><br></p>
+        <p class="p15"><br></p>
+        <p class="p4"><br></p>
+        <ul class="ul1">
+          <li class="li2">Registered FA</li>
+        </ul>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <ul class="ul1">
+          <li class="li2">Recorded FA</li>
+        </ul>
+        <p class="p15"><br></p>
+        <p class="p15"><br></p>
+        <p class="p15"><br></p>
+        <p class="p15"><br></p>
+        <ul class="ul1">
+          <li class="li2">Inventory Report</li>
+        </ul>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <ul class="ul1">
+          <li class="li3">Select FA for disposal</li>
+        </ul>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Fixed Asset Register</p>
+        <p class="p17">Book/ Card</p>
+        <p class="p1">2</p>
+        <p class="p17">Categories of FA &amp; identification No. given<span class="Apple-converted-space"> </span></p>
+        <p class="p17">3</p>
+        <p class="p18">Identification of Fixed Asset</p>
+        <p class="p18">1</p>
+        <p class="p17">Calculate Cost and depreciation<span class="Apple-converted-space"> </span></p>
+        <p class="p19">4</p>
+        <p class="p20"><br></p>
+        <p class="p17">Disposal of FA<span class="Apple-converted-space"> </span></p>
+        <p class="p19">5</p>
+        <p class="p16"><span class="Apple-converted-space">         </span>6. Report<span class="Apple-converted-space"> </span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+        <p class="p2">1.Identified<span class="Apple-converted-space">  </span>FA</p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p22"><br></p>
+        <p class="p1">2.Registered FA<span class="Apple-converted-space"> </span></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p2">3.Recorded FA<span class="Apple-converted-space"> </span></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">4.Calculated FA &amp; Inventory Report</p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p2">5.Selected/identifies<span class="Apple-converted-space"> </span></p>
+        <p class="p2">Disposal Material<span class="Apple-converted-space"> </span></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <ul class="ul1">
+          <li class="li2">Report Submitted</li>
+        </ul>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22"><br></p>
+        <p class="p2">1. PSD, MMS, SK</p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">2. MMS, SK</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p22"><br></p>
+        <p class="p2">3. MMS, SK</p>
+        <p class="p22"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">4. Accountant&amp;</p>
+        <p class="p2">S/Acc.</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">5. MMS, SK/ Committee Member</p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p4"><br></p>
+        <p class="p2">6. PSD, MMS, SK</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+<p class="p4"><br></p>
+<p class="p4"><br></p>
+<p class="p4"><br></p>
+<p class="p4"><br></p>
+<p class="p2"><b>5.2. Process Step Description</b></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>FLW</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3"><b>Description</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <ul class="ul1">
+          <li class="li23"><b></b></li>
+        </ul>
+        <p class="p24"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1"><b>Identify of Fixed Asset<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p5">Fixed Asset consists of all property owned by the company with a useful life of more than one year and a minimum cost of Br 1000 are categorized under this group. Items under 1000 Br are expensed automatically <span class="Apple-converted-space">  </span>and registered by stores and by central procurement &amp;Supply department<b>.</b> This type of fixed asset counts every annual inventory year from the last year inventory compare to the actual year inventory the shortage items report immediately.</p>
+        <p class="p5"><b>*</b>Items in the store that has fixed asset nature and<b> not issued from the store <span class="Apple-tab-span">	</span></b>until issued date <b>should not be</b> included in this category; rather they will be included as stock items.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <ul class="ul1">
+          <li class="li1"></li>
+        </ul>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s1"><b>Fixed Asset Register</b></span></p>
+        <p class="p5">Fixed Asset register is the format to use the WFfixed asset items separately recorded on registration book or fixed asset cards, this card or registration book contains description, identification number, serial number building size(for building),model, unit of measurement, date of purchase, supplier, date of manufacturer, cost, annual depreciation rate, estimated life, location &amp; table calculate depreciation. The format used to recorded full information regarding the Fixed Asset and to compute depreciation this format to should be kept in the general inventories controller and shall be checked during the inventory year and to control the property condition.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <ul class="ul1">
+          <li class="li1"></li>
+        </ul>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><span class="s1"><b>Categories of fixed Assets<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p26"><span class="s1"><b></b></span><br></p>
+        <p class="p25">We classify our fixed assets/ non-current assets above1000 Br in 9groups.</p>
+        <p class="p25">The principal accounting Policies adopted by WF are stated below:-</p>
+        <ul class="ul1">
+          <li class="li3">FA is stated at cost less accumulated depreciation.</li>
+          <li class="li3">Depreciation is computed in accordance with proclamation No.979/2008 on straight line basis using the following per annum</li>
+          <li class="li3">FA acquired before <b>Sene 30, 2008E.C</b> would continue to depreciate on a reducing balance method except for buildings which had been depreciated on a straight line basis.</li>
+          <li class="li3">LEASE HOLD LAND:-It is stated atcost less amortization. Amortization is charged over a period of lease term.</li>
+        </ul>
+        <p class="p2"><span class="s1"><b>Recording<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p5">All fixed Asset above 1000 Br should be identified and recorded in a Fixed Asset Register. They will be physically verified in regular intervals and at the time of acquisition each asset should be given an individual identification number.</p>
+        <p class="p4"><br></p>
+        <p class="p25"><span class="s1"><b>Identification Number (fixed Asset label)<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p27">The identification number tag to the fixed asset to made for aluminum label or another material.</p>
+        <p class="p27">The existence of identification number tags should be checked on the assets during the inventory and controlling time. If missed then it should be retagged.<span class="Apple-converted-space"> </span></p>
+        <p class="p27"><span class="Apple-converted-space">               </span>Please follow the figure on the label of fixed asset <span class="Apple-converted-space"> </span></p>
+        <p class="p28"><br></p>
+        <p class="p27"><span class="Apple-converted-space">    </span>e.g.<span class="Apple-converted-space">          </span>WF<b>-01-001-001</b></p>
+        <p class="p27">WF:<span class="Apple-converted-space"> </span></p>
+        <p class="p27"><span class="Apple-converted-space">                    </span>Number next to<span class="Apple-converted-space">  </span>stands for notifying it is a fixed asset</p>
+        <p class="p27"><span class="Apple-converted-space">                    </span>Number in the middle stands for group (asset type)</p>
+        <p class="p27"><span class="Apple-converted-space">             </span>The last numbers is for fixed assets serial number</p>
+        <p class="p27">N.B:<span class="Apple-converted-space">  </span>each fixed asset’s serial number has to indicate all the information about specific item.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <ul class="ul1">
+          <li class="li29"></li>
+        </ul>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><span class="s1"><b>Cost and depreciation<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p30">The cost of the assets should be capitalized and presented to the company balance sheet. Then in each accounting period a depreciation charge is levied on the income and expenditure account to write off the cost of asset as the same time the contra asset account of the asset i.e. accumulated depreciation shown on the Balance Sheet.</p>
+        <p class="p31"><br></p>
+        <p class="p30">Thus we split the cost of these assets out over a number of years to reflect the contribution they make to the service we provide in future years.<span class="Apple-converted-space"> </span></p>
+        <p class="p30">As an alternative to the actual cost competent valuation may be done as a basis for the initial cost for the first year depreciation is calculated from the assets purchased date to end of the year.</p>
+        <p class="p31"><br></p>
+        <p class="p30"><i>Land<span class="Apple-converted-space">                                        </span>No Depreciation<span class="Apple-converted-space"> </span></i></p>
+        <p class="p30"><i>For Building <span class="Apple-converted-space">                                            </span>20years <span class="Apple-converted-space">                  </span>5%</i></p>
+        <p class="p30"><i>Computer &amp; Printers<span class="Apple-converted-space">  </span>5years<span class="Apple-converted-space">                  </span>20%</i></p>
+        <p class="p30"><i>Others<span class="Apple-converted-space">                                                        </span>6.67 years <span class="Apple-converted-space">            </span>15%</i></p>
+        <p class="p31"><i></i><br></p>
+        <p class="p30">For fully depreciated fixed assets, their value should be recorded as birr 1.00 to show the asset depreciated fully.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <ul class="ul1">
+          <li class="li32"></li>
+        </ul>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p33"><span class="s1"><b>Disposal Of Fixed Asset<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p34"><span class="s1"><b></b></span><br></p>
+        <p class="p33">After annual inventory of fixed Asset, the fixed asset items condition properly records by the attached format of the condition of FA describes by very good, good, fair, non –function, damage, by use of this description, the count committee identifies the fixed assets whether non-functional or need maintenance. Non-functional items need maintenance report to general service head to give maintenance &amp; non-functional &amp; damage items separately recorded and return to stores after that the material ready to disposal by the disposal procedure of FA.</p>
+        <p class="p34"><br></p>
+        <p class="p33"><b>Organizing Committees<span class="Apple-converted-space"> </span></b></p>
+        <p class="p33">A committee composed of three/fiveneedsto be organized for disposal of fixed asset, inventory of fixed asset and any other description to solve by committee. <span class="Apple-converted-space"> </span></p>
+        <p class="p33">A committee member needs to have the ability and experience of undertaking inventory and reporting on their finding and observations<b>.</b></p>
+        <p class="p33">For Entries</p>
+        <p class="p33">*copy of the invoice or alternatively valuation of the asset by competent evaluator.</p>
+        <p class="p33">*Non-Merchandise Receiving Voucher</p>
+        <p class="p33">During Usage</p>
+        <p class="p33">*Copies of major repair invoices and the respective work order<b>.</b></p>
+        <p class="p33">For Disposal<span class="Apple-converted-space"> </span></p>
+        <p class="p33">*Police Statement (in case of theft)</p>
+        <p class="p33">*Transfer letter and Non-Merchandise Issue voucher (in case of transfer)</p>
+        <p class="p33">*Committee statement (in case of scrap/)</p>
+        <p class="p33">Asset disposal write-offs and transfers to be authorized by committee member and approve to managing directors<b>. <span class="Apple-converted-space"> </span></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <ul class="ul1">
+          <li class="li32"><b></b></li>
+        </ul>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s1"><b>Report<span class="Apple-converted-space"> </span></b></span></p>
+        <p class="p35">FA annual inventory report recorded all status of the material condition, location, value and necessary document fully record by its categories the completed report submits to Finance Cost Management Department using the attached format.<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p14"><br></p>
+<p class="p2"><b><span class="Apple-converted-space"> </span>6. RISKS</b></p>
+<ul class="ul1">
+  <li class="li3">Error in record Keeping</li>
+  <li class="li3">Un-updated fixed Asset register</li>
+  <li class="li3">Typing error</li>
+  <li class="li3">Calculating error</li>
+</ul>
+<p class="p14"><br></p>
+<p class="p2"><b>7. RECORDS</b></p>
+<p class="p2">The supplydivision shall keep the following records</p>
+<ul class="ul1">
+  <li class="li3">Fixed Asset Register Card</li>
+  <li class="li3">Fixed Asset Register Book</li>
+  <li class="li3">Fixed Asset Transfer Document</li>
+  <li class="li3">Non-Merchandise Issue Voucher</li>
+  <li class="li3">Non-MerchandiseReceiving Note</li>
+</ul>
+<p class="p14"><br></p>
+<p class="p14"><br></p>
+<p class="p4"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p2"><b>8. RELATED DOCUMENTS</b></p>
+<p class="p4"><b></b><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Document Number</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1"><b>Document Title</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p36">OF/WF/131-150</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">FinanceDepartment Operating Formats</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">OF/WF/165-180</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">Materials ManagementOperating Formats</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><br></p>
+</body>
+</html>

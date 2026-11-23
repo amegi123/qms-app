@@ -1,0 +1,17 @@
+{
+  "name": "waterpipe-qms-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "seed": "node seed.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "description": "Water Fit eQMS \u2013 ISO 9001:2015 quality management system (demo)",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  }
+}
